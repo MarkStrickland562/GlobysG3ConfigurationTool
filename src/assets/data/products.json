@@ -1,0 +1,31 @@
+{
+  "products": {
+    "1": {
+      "product_name": "BA",
+      "client_id": "67",
+      "display_name": "Billed",
+      "display_order": "1",
+      "display_help_text": "",
+      "product_code": "BA",
+      "piv_flg": "0"
+    },
+    "2": {
+      "product_name": "BB",
+      "client_id": "67",
+      "display_name": "Unbilled",
+      "display_order": "2",
+      "display_help_text": "Analyze your usage in real time",
+      "product_code": "BB",
+      "piv_flg": "0"
+    },
+    "3": {
+      "product_name": "LE",
+      "client_id": "67",
+      "display_name": "SMB Billed",
+      "display_order": "3",
+      "display_help_text": "",
+      "product_code": "LE",
+      "piv_flg": "0"
+    }
+  }
+}
