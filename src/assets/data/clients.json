@@ -1,0 +1,32 @@
+{
+  "clients": {
+    "1": {
+      "nme": "tele.com",
+      "encrypt_key": "$$ThisHasBeenScrubbed$$",
+      "external_id": "000000000",
+      "client_ad_nme": "tele.com",
+      "login": "tele.com",
+      "password": "XXXXXXXXXXC9624DB447BB860BBE4D04246D60BC14",
+      "validation_question_1": "This functionality is only available to certain users - if authorised please enter the correct password.",
+      "validation_question_2": "- Note this workflow will move the nominated CIDN and <b>all its accounts</b> to the target CIDN in T Analyst. - Note the nominated CIDN will no longer be accessible after this step and <b>all customer hierarchies and settings associated with this CIDN will be lost </b> - Enter <b>Yes</b> to continue or <b>No</b> to exit ",
+      "validation_question_3": "",
+      "validation_question_4": "",
+      "validation_question_5": "",
+      "preproc_min": "10000",
+      "default_language_id": "0",
+      "default_currency_id": "2",
+      "default_currency_use_symbol": "1",
+      "default_email_address": "noemail@globys.com",
+      "public_encryption_key": "",
+      "public_encryption_type": "0",
+      "user_acct_flg": "0",
+      "pwd_history_count": "0",
+      "min_pwd_days": "0",
+      "max_pwd_days": "0",
+      "sso_redirect_flg": "",
+      "cat_acct_search_type": "0",
+      "sso_redirect_querystring_flg": "0",
+      "timezone": ""
+    }
+  }
+}
