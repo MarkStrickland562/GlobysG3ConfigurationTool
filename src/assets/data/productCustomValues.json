@@ -1,0 +1,269 @@
+{
+  "productCustomValues": [
+    {
+      "product_id": "2",
+      "custom_value_id": "507",
+      "custom_type_id": "3"
+    },
+    {
+      "product_id": "300",
+      "custom_value_id": "980",
+      "custom_type_id": "3"
+    },
+    {
+      "product_id": "1",
+      "custom_value_id": "980",
+      "custom_type_id": "300"
+    },
+    {
+      "product_id": "1",
+      "custom_value_id": "981",
+      "custom_type_id": "301"
+    },
+    {
+      "product_id": "301",
+      "custom_value_id": "981",
+      "custom_type_id": "3"
+    },
+    {
+      "product_id": "1",
+      "custom_value_id": "982",
+      "custom_type_id": "3804"
+    },
+    {
+      "product_id": "3804",
+      "custom_value_id": "982",
+      "custom_type_id": "3"
+    },
+    {
+      "product_id": "2300",
+      "custom_value_id": "983",
+      "custom_type_id": "3"
+    },
+    {
+      "product_id": "1",
+      "custom_value_id": "983",
+      "custom_type_id": "2300"
+    },
+    {
+      "product_id": "1",
+      "custom_value_id": "984",
+      "custom_type_id": "66"
+    },
+    {
+      "product_id": "66",
+      "custom_value_id": "984",
+      "custom_type_id": "3"
+    },
+    {
+      "product_id": "1",
+      "custom_value_id": "985",
+      "custom_type_id": "2135"
+    },
+    {
+      "product_id": "2135",
+      "custom_value_id": "985",
+      "custom_type_id": "3"
+    },
+    {
+      "product_id": "2136",
+      "custom_value_id": "986",
+      "custom_type_id": "3"
+    },
+    {
+      "product_id": "1",
+      "custom_value_id": "986",
+      "custom_type_id": "2136"
+    },
+    {
+      "product_id": "1",
+      "custom_value_id": "987",
+      "custom_type_id": "2500"
+    },
+    {
+      "product_id": "2500",
+      "custom_value_id": "987",
+      "custom_type_id": "3"
+    },
+    {
+      "product_id": "4000",
+      "custom_value_id": "988",
+      "custom_type_id": "3"
+    },
+    {
+      "product_id": "1",
+      "custom_value_id": "988",
+      "custom_type_id": "4000"
+    },
+    {
+      "product_id": "1",
+      "custom_value_id": "989",
+      "custom_type_id": "4001"
+    },
+    {
+      "product_id": "4001",
+      "custom_value_id": "989",
+      "custom_type_id": "3"
+    },
+    {
+      "product_id": "4002",
+      "custom_value_id": "990",
+      "custom_type_id": "3"
+    },
+    {
+      "product_id": "1",
+      "custom_value_id": "990",
+      "custom_type_id": "4002"
+    },
+    {
+      "product_id": "1",
+      "custom_value_id": "991",
+      "custom_type_id": "4003"
+    },
+    {
+      "product_id": "4003",
+      "custom_value_id": "991",
+      "custom_type_id": "3"
+    },
+    {
+      "product_id": "4004",
+      "custom_value_id": "992",
+      "custom_type_id": "3"
+    },
+    {
+      "product_id": "1",
+      "custom_value_id": "992",
+      "custom_type_id": "4004"
+    },
+    {
+      "product_id": "1933",
+      "custom_value_id": "993",
+      "custom_type_id": "3"
+    },
+    {
+      "product_id": "1",
+      "custom_value_id": "993",
+      "custom_type_id": "1933"
+    },
+    {
+      "product_id": "1",
+      "custom_value_id": "995",
+      "custom_type_id": "20020"
+    },
+    {
+      "product_id": "20020",
+      "custom_value_id": "995",
+      "custom_type_id": "3"
+    },
+    {
+      "product_id": "2400",
+      "custom_value_id": "996",
+      "custom_type_id": "3"
+    },
+    {
+      "product_id": "1",
+      "custom_value_id": "996",
+      "custom_type_id": "2400"
+    },
+    {
+      "product_id": "1",
+      "custom_value_id": "997",
+      "custom_type_id": "3807"
+    },
+    {
+      "product_id": "3807",
+      "custom_value_id": "997",
+      "custom_type_id": "3"
+    },
+    {
+      "product_id": "1",
+      "custom_value_id": "999",
+      "custom_type_id": "62"
+    },
+    {
+      "product_id": "62",
+      "custom_value_id": "999",
+      "custom_type_id": "3"
+    },
+    {
+      "product_id": "61",
+      "custom_value_id": "1000",
+      "custom_type_id": "3"
+    },
+    {
+      "product_id": "1",
+      "custom_value_id": "1000",
+      "custom_type_id": "61"
+    },
+    {
+      "product_id": "1",
+      "custom_value_id": "1001",
+      "custom_type_id": "3911"
+    },
+    {
+      "product_id": "3911",
+      "custom_value_id": "1001",
+      "custom_type_id": "3"
+    },
+    {
+      "product_id": "1",
+      "custom_value_id": "1111",
+      "custom_type_id": "2"
+    },
+    {
+      "product_id": "1",
+      "custom_value_id": "1224",
+      "custom_type_id": "1101"
+    },
+    {
+      "product_id": "1101",
+      "custom_value_id": "1224",
+      "custom_type_id": "3"
+    },
+    {
+      "product_id": "1100",
+      "custom_value_id": "1225",
+      "custom_type_id": "3"
+    },
+    {
+      "product_id": "1",
+      "custom_value_id": "1225",
+      "custom_type_id": "1100"
+    },
+    {
+      "product_id": "1",
+      "custom_value_id": "2053",
+      "custom_type_id": "4031"
+    },
+    {
+      "product_id": "4031",
+      "custom_value_id": "2053",
+      "custom_type_id": "3"
+    },
+    {
+      "product_id": "2",
+      "custom_value_id": "2322",
+      "custom_type_id": "638"
+    },
+    {
+      "product_id": "2",
+      "custom_value_id": "2337",
+      "custom_type_id": "5"
+    },
+    {
+      "product_id": "1",
+      "custom_value_id": "2337",
+      "custom_type_id": "5"
+    },
+    {
+      "product_id": "2",
+      "custom_value_id": "2338",
+      "custom_type_id": "10000"
+    },
+    {
+      "product_id": "3",
+      "custom_value_id": "2338",
+      "custom_type_id": "5"
+    }
+  ]
+}

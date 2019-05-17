@@ -1,0 +1,868 @@
+{
+  "groupCustomValues": [
+    {
+      "group_id": "2",
+      "custom_value_id": "976",
+      "custom_type_id": "636",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "1052",
+      "custom_type_id": "636",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "1054",
+      "custom_type_id": "66",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "1055",
+      "custom_type_id": "2135",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "1056",
+      "custom_type_id": "2136",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "1057",
+      "custom_type_id": "2400",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "1059",
+      "custom_type_id": "62",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "1060",
+      "custom_type_id": "61",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "1061",
+      "custom_type_id": "3911",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "1112",
+      "custom_type_id": "2",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "1117",
+      "custom_type_id": "3800",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "1118",
+      "custom_type_id": "3801",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "1119",
+      "custom_type_id": "3800",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "1120",
+      "custom_type_id": "3801",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2045",
+      "custom_type_id": "4354",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2046",
+      "custom_type_id": "4354",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2092",
+      "custom_type_id": "154",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2092",
+      "custom_type_id": "154",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2094",
+      "custom_type_id": "4328",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2095",
+      "custom_type_id": "4328",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2145",
+      "custom_type_id": "3109",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2145",
+      "custom_type_id": "3109",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2146",
+      "custom_type_id": "3100",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2146",
+      "custom_type_id": "3100",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2147",
+      "custom_type_id": "3103",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2147",
+      "custom_type_id": "3103",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2148",
+      "custom_type_id": "3104",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2148",
+      "custom_type_id": "3104",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2149",
+      "custom_type_id": "3107",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2149",
+      "custom_type_id": "3107",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2150",
+      "custom_type_id": "3110",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2150",
+      "custom_type_id": "3110",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2151",
+      "custom_type_id": "3111",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2151",
+      "custom_type_id": "3111",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2157",
+      "custom_type_id": "3843",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2157",
+      "custom_type_id": "3843",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2158",
+      "custom_type_id": "3844",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2158",
+      "custom_type_id": "3844",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2159",
+      "custom_type_id": "3842",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2159",
+      "custom_type_id": "3842",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2160",
+      "custom_type_id": "3840",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2160",
+      "custom_type_id": "3840",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2161",
+      "custom_type_id": "3841",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2161",
+      "custom_type_id": "3841",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2162",
+      "custom_type_id": "3823",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2162",
+      "custom_type_id": "3823",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2163",
+      "custom_type_id": "3824",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2163",
+      "custom_type_id": "3824",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2164",
+      "custom_type_id": "3822",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2164",
+      "custom_type_id": "3822",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2165",
+      "custom_type_id": "3820",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2165",
+      "custom_type_id": "3820",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2166",
+      "custom_type_id": "3821",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2166",
+      "custom_type_id": "3821",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2167",
+      "custom_type_id": "3827",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2167",
+      "custom_type_id": "3827",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2168",
+      "custom_type_id": "3828",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2168",
+      "custom_type_id": "3828",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2169",
+      "custom_type_id": "3829",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2169",
+      "custom_type_id": "3829",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2170",
+      "custom_type_id": "3825",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2170",
+      "custom_type_id": "3825",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2171",
+      "custom_type_id": "3826",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2171",
+      "custom_type_id": "3826",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2172",
+      "custom_type_id": "3815",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2172",
+      "custom_type_id": "3815",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2173",
+      "custom_type_id": "3816",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2173",
+      "custom_type_id": "3816",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2174",
+      "custom_type_id": "3819",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2174",
+      "custom_type_id": "3819",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2175",
+      "custom_type_id": "3818",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2175",
+      "custom_type_id": "3818",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2176",
+      "custom_type_id": "3817",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2176",
+      "custom_type_id": "3817",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2177",
+      "custom_type_id": "3813",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2177",
+      "custom_type_id": "3813",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2178",
+      "custom_type_id": "3814",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2178",
+      "custom_type_id": "3814",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2179",
+      "custom_type_id": "3812",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2179",
+      "custom_type_id": "3812",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2180",
+      "custom_type_id": "3810",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2180",
+      "custom_type_id": "3810",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2181",
+      "custom_type_id": "3811",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2181",
+      "custom_type_id": "3811",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2182",
+      "custom_type_id": "3833",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2182",
+      "custom_type_id": "3833",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2183",
+      "custom_type_id": "3834",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2183",
+      "custom_type_id": "3834",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2184",
+      "custom_type_id": "3832",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2184",
+      "custom_type_id": "3832",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2185",
+      "custom_type_id": "3830",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2185",
+      "custom_type_id": "3830",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2186",
+      "custom_type_id": "3831",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2186",
+      "custom_type_id": "3831",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2187",
+      "custom_type_id": "3838",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2187",
+      "custom_type_id": "3838",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2188",
+      "custom_type_id": "3839",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2188",
+      "custom_type_id": "3839",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2189",
+      "custom_type_id": "3837",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2189",
+      "custom_type_id": "3837",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2190",
+      "custom_type_id": "3835",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2190",
+      "custom_type_id": "3835",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2191",
+      "custom_type_id": "3836",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2191",
+      "custom_type_id": "3836",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2192",
+      "custom_type_id": "3500",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2192",
+      "custom_type_id": "3500",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2193",
+      "custom_type_id": "3503",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2193",
+      "custom_type_id": "3503",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2194",
+      "custom_type_id": "3504",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2194",
+      "custom_type_id": "3504",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2195",
+      "custom_type_id": "3501",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2195",
+      "custom_type_id": "3501",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2196",
+      "custom_type_id": "3502",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2196",
+      "custom_type_id": "3502",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2197",
+      "custom_type_id": "3520",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2197",
+      "custom_type_id": "3520",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2198",
+      "custom_type_id": "3523",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2198",
+      "custom_type_id": "3523",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2199",
+      "custom_type_id": "3524",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2199",
+      "custom_type_id": "3524",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2200",
+      "custom_type_id": "3521",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2200",
+      "custom_type_id": "3521",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2201",
+      "custom_type_id": "3522",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2201",
+      "custom_type_id": "3522",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2203",
+      "custom_type_id": "3513",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2203",
+      "custom_type_id": "3513",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2204",
+      "custom_type_id": "3510",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2204",
+      "custom_type_id": "3510",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2205",
+      "custom_type_id": "3514",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2205",
+      "custom_type_id": "3514",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2206",
+      "custom_type_id": "3511",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2206",
+      "custom_type_id": "3511",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2207",
+      "custom_type_id": "3512",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2207",
+      "custom_type_id": "3512",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2217",
+      "custom_type_id": "2101",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2217",
+      "custom_type_id": "2101",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2218",
+      "custom_type_id": "2102",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2218",
+      "custom_type_id": "2102",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2219",
+      "custom_type_id": "2103",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2219",
+      "custom_type_id": "2103",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2220",
+      "custom_type_id": "3303",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2220",
+      "custom_type_id": "3303",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "1",
+      "custom_value_id": "2221",
+      "custom_type_id": "2100",
+      "intersect_custom_value_id": ""
+    },
+    {
+      "group_id": "2",
+      "custom_value_id": "2221",
+      "custom_type_id": "2100",
+      "intersect_custom_value_id": ""
+    }
+  ]
+}
