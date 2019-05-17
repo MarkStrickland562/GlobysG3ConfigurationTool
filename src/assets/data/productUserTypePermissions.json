@@ -1,0 +1,54 @@
+{
+  "productUserTypePermissions": [
+    {
+      "product_id": "1",
+      "user_type": "1",
+      "permission_id": "141"
+    },
+    {
+      "product_id": "1",
+      "user_type": "2",
+      "permission_id": "2"
+    },
+    {
+      "product_id": "1",
+      "user_type": "2",
+      "permission_id": "2"
+    },
+    {
+      "product_id": "1",
+      "user_type": "2",
+      "permission_id": "121"
+    },
+    {
+      "product_id": "1",
+      "user_type": "2",
+      "permission_id": "123"
+    },
+    {
+      "product_id": "1",
+      "user_type": "2",
+      "permission_id": "340"
+    },
+    {
+      "product_id": "1",
+      "user_type": "2",
+      "permission_id": "860"
+    },
+    {
+      "product_id": "1",
+      "user_type": "2",
+      "permission_id": "860"
+    },
+    {
+      "product_id": "1",
+      "user_type": "3",
+      "permission_id": "141"
+    },
+    {
+      "product_id": "1",
+      "user_type": "4",
+      "permission_id": "141"
+    }
+  ]
+}

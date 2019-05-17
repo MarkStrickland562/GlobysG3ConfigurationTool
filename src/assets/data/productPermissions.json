@@ -1,0 +1,1288 @@
+{
+  "productPermissions": [
+    {
+      "product_id": "1",
+      "permission_id": "2"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "4"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "5"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "6"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "8"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "9"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "12"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "13"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "16"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "17"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "22"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "28"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "30"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "31"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "33"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "34"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "43"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "45"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "46"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "47"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "48"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "49"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "51"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "55"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "60"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "61"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "62"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "63"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "68"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "69"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "85"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "86"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "87"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "88"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "101"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "102"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "103"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "104"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "105"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "110"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "120"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "121"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "122"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "123"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "124"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "125"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "126"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "127"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "128"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "130"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "131"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "132"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "133"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "134"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "141"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "144"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "145"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "150"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "165"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "201"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "202"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "204"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "205"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "206"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "271"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "272"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "273"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "277"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "278"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "279"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "300"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "301"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "302"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "303"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "304"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "305"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "306"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "310"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "311"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "312"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "313"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "320"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "322"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "330"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "331"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "332"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "335"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "336"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "337"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "338"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "340"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "373"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "380"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "382"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "383"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "392"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "393"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "394"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "396"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "399"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "404"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "406"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "407"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "408"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "409"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "414"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "418"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "440"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "442"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "445"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "446"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "511"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "640"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "650"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "660"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "670"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "690"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "720"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "752"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "753"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "754"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "755"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "756"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "757"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "860"
+    },
+    {
+      "product_id": "1",
+      "permission_id": "2055"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "8"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "9"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "12"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "13"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "16"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "17"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "22"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "28"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "30"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "31"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "33"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "34"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "43"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "45"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "46"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "47"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "48"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "49"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "51"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "55"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "60"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "61"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "62"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "85"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "86"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "87"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "88"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "102"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "103"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "104"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "105"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "110"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "120"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "121"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "122"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "123"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "124"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "125"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "126"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "127"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "128"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "130"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "131"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "132"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "133"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "134"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "141"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "144"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "145"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "150"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "165"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "204"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "260"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "271"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "273"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "277"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "278"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "279"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "300"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "301"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "302"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "310"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "311"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "312"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "313"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "320"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "322"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "330"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "331"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "332"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "335"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "336"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "337"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "338"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "340"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "377"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "378"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "379"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "380"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "381"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "393"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "394"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "396"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "399"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "406"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "407"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "408"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "409"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "414"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "418"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "440"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "442"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "640"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "650"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "660"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "690"
+    },
+    {
+      "product_id": "2",
+      "permission_id": "720"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "2"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "4"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "5"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "6"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "8"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "9"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "12"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "13"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "16"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "17"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "22"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "30"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "34"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "43"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "45"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "46"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "47"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "48"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "49"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "51"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "55"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "60"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "68"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "69"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "85"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "86"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "87"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "88"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "101"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "102"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "103"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "104"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "110"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "144"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "145"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "150"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "201"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "202"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "204"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "205"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "206"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "271"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "272"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "273"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "277"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "278"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "279"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "300"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "301"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "302"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "303"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "304"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "305"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "306"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "310"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "311"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "312"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "313"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "320"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "322"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "330"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "331"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "332"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "335"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "336"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "337"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "338"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "340"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "373"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "382"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "383"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "392"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "393"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "394"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "399"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "404"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "406"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "407"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "408"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "409"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "414"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "440"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "442"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "445"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "446"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "640"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "650"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "660"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "670"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "690"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "720"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "752"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "753"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "754"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "755"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "756"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "757"
+    },
+    {
+      "product_id": "3",
+      "permission_id": "860"
+    }
+  ]
+}

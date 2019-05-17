@@ -1,0 +1,104 @@
+{
+  "permissionCategories": {
+    "1": {
+      "permission_category_name": "Landing Page",
+      "display_order": "1"
+    },
+    "2": {
+      "permission_category_name": "Statement Presentation",
+      "display_order": "2"
+    },
+    "3": {
+      "permission_category_name": "Reporting Options – Detail Reporting",
+      "display_order": "3"
+    },
+    "4": {
+      "permission_category_name": "Reporting Options – Summary Reporting",
+      "display_order": "4"
+    },
+    "5": {
+      "permission_category_name": "Reporting Options – Cost Allocation",
+      "display_order": "5"
+    },
+    "6": {
+      "permission_category_name": "Reporting Options – General",
+      "display_order": "6"
+    },
+    "7": {
+      "permission_category_name": "Report Ordering",
+      "display_order": "7"
+    },
+    "8": {
+      "permission_category_name": "Filters",
+      "display_order": "8"
+    },
+    "9": {
+      "permission_category_name": "Settings Tab",
+      "display_order": "9"
+    },
+    "11": {
+      "permission_category_name": "Hierarchy Management",
+      "display_order": "11"
+    },
+    "12": {
+      "permission_category_name": "Online Help",
+      "display_order": "12"
+    },
+    "13": {
+      "permission_category_name": "Payments",
+      "display_order": "13"
+    },
+    "14": {
+      "permission_category_name": "Access Controls",
+      "display_order": "14"
+    },
+    "15": {
+      "permission_category_name": "Registration Options",
+      "display_order": "15"
+    },
+    "16": {
+      "permission_category_name": "Localization",
+      "display_order": "16"
+    },
+    "17": {
+      "permission_category_name": "Offline Documents",
+      "display_order": "17"
+    },
+    "18": {
+      "permission_category_name": "Alerts and Notifications",
+      "display_order": "18"
+    },
+    "19": {
+      "permission_category_name": "Charge Disputes",
+      "display_order": "19"
+    },
+    "20": {
+      "permission_category_name": "Mobile Management",
+      "display_order": "20"
+    },
+    "21": {
+      "permission_category_name": "Split Billing",
+      "display_order": "21"
+    },
+    "22": {
+      "permission_category_name": "Bill Payment Manager",
+      "display_order": "22"
+    },
+    "23": {
+      "permission_category_name": "Message Center",
+      "display_order": "23"
+    },
+    "24": {
+      "permission_category_name": "Miscellaneous Other",
+      "display_order": "24"
+    },
+    "25": {
+      "permission_category_name": "Deprecated Functionality",
+      "display_order": "25"
+    },
+    "26": {
+      "permission_category_name": "Modify app-wide UI",
+      "display_order": "26"
+    }
+  }
+}

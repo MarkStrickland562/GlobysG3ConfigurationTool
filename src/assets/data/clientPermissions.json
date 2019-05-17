@@ -1,0 +1,48 @@
+{
+  "clientPermissions": [
+    {
+      "client_id": "67",
+      "permission_id": "97"
+    },
+    {
+      "client_id": "67",
+      "permission_id": "197"
+    },
+    {
+      "client_id": "67",
+      "permission_id": "373"
+    },
+    {
+      "client_id": "67",
+      "permission_id": "394"
+    },
+    {
+      "client_id": "67",
+      "permission_id": "395"
+    },
+    {
+      "client_id": "67",
+      "permission_id": "404"
+    },
+    {
+      "client_id": "67",
+      "permission_id": "600"
+    },
+    {
+      "client_id": "67",
+      "permission_id": "670"
+    },
+    {
+      "client_id": "67",
+      "permission_id": "695"
+    },
+    {
+      "client_id": "67",
+      "permission_id": "720"
+    },
+    {
+      "client_id": "67",
+      "permission_id": "820"
+    }
+  ]
+}

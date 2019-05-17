@@ -1,0 +1,2062 @@
+{
+  "permissions": {
+    "1": {
+      "nme": "Authorized to make Legacy payments",
+      "type": "MP",
+      "user_flg": "1",
+      "permission_category_id": "13",
+      "permission_description": "Pay Bill: User based permission that allows for making a payment on a statement."
+    },
+    "2": {
+      "nme": "Authorized to setup/edit payment information",
+      "type": "EP",
+      "user_flg": "1",
+      "permission_category_id": "13",
+      "permission_description": "Set up and edit payment information: Allows users to setup payment information. Which type (Credit Card or EFT) is determined by additional permissions."
+    },
+    "3": {
+      "nme": "Restrict setup of payment information to only accounts with payable bills. (3.5+ only, requires EP)",
+      "type": "ER",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": "Restricts the ability to create/edit account-associated payment information to accounts that are associated with a bill (in other words, effectively disables the ability to set up payment information on accounts with payment_status_id=3 or without a bill information being supplied with account).  Requires permission_id=2 (EP) to also be active."
+    },
+    "4": {
+      "nme": "Statement available",
+      "type": "SH",
+      "user_flg": "0",
+      "permission_category_id": "2",
+      "permission_description": "Enables the Statement module which allows for a variety of features to be exposed to the user centered around the online display of monthly invoice information. This module is heavily customizable, depending on the sub components that are enabled."
+    },
+    "5": {
+      "nme": "Bank account payments accepted",
+      "type": "BA",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": "Electronic Funds Transfer Accepted - One-time: Needs to be assigned to each account eligible for payment via EFT. Usually via group configuration."
+    },
+    "6": {
+      "nme": "Credit card payments accepted",
+      "type": "CC",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": "Credit Card Charges Accepted - One-time: Needs to be assigned to each account eligible for payment via Credit Card. Usually via group configuration."
+    },
+    "8": {
+      "nme": "Visa Accepted",
+      "type": "VI",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": "Visa Accepted."
+    },
+    "9": {
+      "nme": "MasterCard Accepted",
+      "type": "MC",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": "MasterCard Accepted."
+    },
+    "10": {
+      "nme": "American Express Accepted",
+      "type": "AX",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": "American Express Accepted."
+    },
+    "11": {
+      "nme": "Discover Accepted",
+      "type": "DC",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": "Discover Accepted."
+    },
+    "12": {
+      "nme": "Summary available",
+      "type": "SM",
+      "user_flg": "0",
+      "permission_category_id": "4",
+      "permission_description": "Enables the Summary Reporting module, which allows users to run reports that will aggregate their data based on specified groups and subgroups. The aggregation will be done on configured calculations."
+    },
+    "13": {
+      "nme": "Detail available",
+      "type": "DT",
+      "user_flg": "0",
+      "permission_category_id": "3",
+      "permission_description": "Enables the Detail Reporting module, which allows users to run detail reports that will list each individual record in their data based on the specified fields. This module requires data mapping and default report configuration in order to be fully functional."
+    },
+    "15": {
+      "nme": "Map available",
+      "type": "MA",
+      "user_flg": "0",
+      "permission_category_id": "25",
+      "permission_description": "Enables the Map Reporting module, which allows for users to geographically plot their calls. This module is typically only used as part of Usage Analyst."
+    },
+    "16": {
+      "nme": "Settings available",
+      "type": "SE",
+      "user_flg": "0",
+      "permission_category_id": "9",
+      "permission_description": "Enables the User Profile Events module (Settings Tab). This section contains a variety of tools and features that the user has control over. The full extent of the features available in this section is controlled by various sub-modules that can be enabled or disabled depending on business requirements. Some components require supporting data mapping excercises to become fully functional."
+    },
+    "17": {
+      "nme": "Help available",
+      "type": "HP",
+      "user_flg": "0",
+      "permission_category_id": "12",
+      "permission_description": "Enables the Help tab on the main menu navigation."
+    },
+    "19": {
+      "nme": "Settings - Accounts available",
+      "type": "AT",
+      "user_flg": "0",
+      "permission_category_id": "9",
+      "permission_description": "Setup - Descriptions – Accounts: Legacy feature replaced by hierarchy functionality for newer implementations."
+    },
+    "20": {
+      "nme": "Settings - Account Codes available",
+      "type": "AC",
+      "user_flg": "0",
+      "permission_category_id": "9",
+      "permission_description": "Setup - Descriptions - Account Codes: Legacy feature replaced by hierarchy functionality for newer implementations."
+    },
+    "21": {
+      "nme": "Settings - Area Codes available",
+      "type": "AR",
+      "user_flg": "0",
+      "permission_category_id": "9",
+      "permission_description": "Setup - Descriptions - Area Codes: Enables the area codes section in the UI. Requires data mapping and report configuration to enable fields for reporting on this information."
+    },
+    "22": {
+      "nme": "Ability to Edit CallGroups",
+      "type": "CG",
+      "user_flg": "0",
+      "permission_category_id": "8",
+      "permission_description": "Allows users to create, modify and remove filters via the filters interface. Enabling this component turns access to this feature on in the reporting areas via a link being added to the filters dropdown box and in the settings area via exposure of the filters section."
+    },
+    "23": {
+      "nme": "Settings - Categories available",
+      "type": "CT",
+      "user_flg": "0",
+      "permission_category_id": "9",
+      "permission_description": "Setup - Descriptions – Categories: deprecated functionality replaced by hierarchies."
+    },
+    "25": {
+      "nme": "Settings - Destination Numbers available",
+      "type": "DN",
+      "user_flg": "0",
+      "permission_category_id": "9",
+      "permission_description": "Setup - Descriptions - Destination Numbers: Enables the destination numbers section in the UI. Requires data mapping and report configuration to enable fields for reporting. Replaced by Global Description functionality in newer implementations."
+    },
+    "26": {
+      "nme": "Settings - Origin Numbers available",
+      "type": "ON",
+      "user_flg": "0",
+      "permission_category_id": "9",
+      "permission_description": "Setup - Descriptions - Origin Numbers: Enables the origin numbers section in the UI. Requires data mapping and report configuration to enable fields for reporting. Replaced by Global Description functionality in newer implementations."
+    },
+    "28": {
+      "nme": "Settings - Rate Plans available",
+      "type": "RP",
+      "user_flg": "0",
+      "permission_category_id": "9",
+      "permission_description": "Enables the Markups component in the Settings tab. Users can create, modify and delete markups that allow for a fixed percentage-based or fixed plus percentage-based markup to be applied to all cost fields associated with a given report. During report setup, users can specify whether the report should utilize the markup or not."
+    },
+    "30": {
+      "nme": "Settings - Time Periods available",
+      "type": "TP",
+      "user_flg": "0",
+      "permission_category_id": "9",
+      "permission_description": "Setup - Descriptions - Time Periods: Enables the time periods section of the UI."
+    },
+    "31": {
+      "nme": "Edit Detail reports",
+      "type": "ED",
+      "user_flg": "0",
+      "permission_category_id": "3",
+      "permission_description": "Allows users to create, modify and delete any detail reports that they own."
+    },
+    "33": {
+      "nme": "Edit Summary reports",
+      "type": "ES",
+      "user_flg": "0",
+      "permission_category_id": "4",
+      "permission_description": "Allows users to create, modify and delete any summary reports that they own."
+    },
+    "34": {
+      "nme": "Edit Users",
+      "type": "EU",
+      "user_flg": "1",
+      "permission_category_id": "9",
+      "permission_description": "Allows admin users to create and manage additional type 2 users. This feature is typically only enabled for customers that do not have a portal that they wish to integrate with unless modified by the supplemental change users permission (150)."
+    },
+    "43": {
+      "nme": "Home Available",
+      "type": "HM",
+      "user_flg": "0",
+      "permission_category_id": "1",
+      "permission_description": "Enables the home page on the main menu navigation."
+    },
+    "44": {
+      "nme": "Settings - User Profile available",
+      "type": "UP",
+      "user_flg": "0",
+      "permission_category_id": "9",
+      "permission_description": "Allows a user to modify certain information about their user profile including email address, password, etc. This feature is only enabled for those customers that do not utilize portal integration."
+    },
+    "45": {
+      "nme": "Detail Download",
+      "type": "DD",
+      "user_flg": "0",
+      "permission_category_id": "3",
+      "permission_description": "Detail – CSV Export Available."
+    },
+    "46": {
+      "nme": "Log Off available",
+      "type": "LO",
+      "user_flg": "0",
+      "permission_category_id": "14",
+      "permission_description": "Log Off: Toggles whether or not the logoff button is available."
+    },
+    "47": {
+      "nme": "Summary Download Permission",
+      "type": "SD",
+      "user_flg": "0",
+      "permission_category_id": "4",
+      "permission_description": "Allows users to download their summary reports in CSV format."
+    },
+    "48": {
+      "nme": "Use CallGroup Permission",
+      "type": "UC",
+      "user_flg": "0",
+      "permission_category_id": "8",
+      "permission_description": "Summary and Detail - Use Filters: Enables the ability to use filters in summary and detail reports. Users need permission 22 in order to create and edit filters."
+    },
+    "49": {
+      "nme": "Download Statement – CSV",
+      "type": "TD",
+      "user_flg": "0",
+      "permission_category_id": "2",
+      "permission_description": "Allows users to download a CSV representation of their online statement."
+    },
+    "50": {
+      "nme": "Link payment permission",
+      "type": "LP",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": "Transfer User To Client For Payment Submission –make payment button uses a URL (customization 1210) for redirecting user to an external site for payment submission."
+    },
+    "51": {
+      "nme": "The registration HTML email/text option",
+      "type": "AH",
+      "user_flg": "0",
+      "permission_category_id": "15",
+      "permission_description": "Registration - E-mail Format Option (Text/HTML): Enables the display of a radio button to users when registering where they may choose between text or html emails."
+    },
+    "52": {
+      "nme": "EFT/WT Offline Payments",
+      "type": "Z2",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": ""
+    },
+    "53": {
+      "nme": "PBM Offline Payments",
+      "type": "Z3",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": ""
+    },
+    "54": {
+      "nme": "Single Statement Override",
+      "type": "CD",
+      "user_flg": "0",
+      "permission_category_id": "2",
+      "permission_description": ""
+    },
+    "55": {
+      "nme": "The registration email load notification option",
+      "type": "LN",
+      "user_flg": "0",
+      "permission_category_id": "15",
+      "permission_description": "Registration - Notification E-Mail Option: Enables the display of a radio button to users when registering that allows them to opt out of notification emails."
+    },
+    "56": {
+      "nme": "Payment – CT Payment Credit Card Transactions",
+      "type": "Z4",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": ""
+    },
+    "57": {
+      "nme": "Payments - Chase PaymentTech Credit Card Transactions",
+      "type": "CY",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": ""
+    },
+    "60": {
+      "nme": "Drill Down available",
+      "type": "DR",
+      "user_flg": "0",
+      "permission_category_id": "4",
+      "permission_description": "Allows users to drill down on resultant group and subgroup components in the Summary Report to see the underlying details of those components. This option requires additional field configuration for each report type that is implemented in order to be fully functional."
+    },
+    "61": {
+      "nme": "Hierarchy Change Reports",
+      "type": "HR",
+      "user_flg": "0",
+      "permission_category_id": "11",
+      "permission_description": "Setup - Hierarchies - View Change History: Enables the viewing of a change history for public hierarchies."
+    },
+    "62": {
+      "nme": "Hierarchy - Persist Hierarchy Tree",
+      "type": "PH",
+      "user_flg": "0",
+      "permission_category_id": "11",
+      "permission_description": "Setup - Hierarchies - Persist Hierarchy Tree – Determines whether tree builder state is maintained (which nodes are expanded and collapsed) during page changes. This is a performance optimizer."
+    },
+    "63": {
+      "nme": "Hierarchy - Display Allocate Cost section",
+      "type": "HO",
+      "user_flg": "0",
+      "permission_category_id": "5",
+      "permission_description": "Enables the Cost Allocation module, which allows users to report on allocations they have made on account and service level charges via their various hierarchies. Utilizing this feature requires additional data mapping to build out the rules for various charge types."
+    },
+    "68": {
+      "nme": "Hierarchy Allocate Cost- Download CSV",
+      "type": "HC",
+      "user_flg": "0",
+      "permission_category_id": "5",
+      "permission_description": "Allows users to download Cost Allocation results in CSV format."
+    },
+    "69": {
+      "nme": "Hierarchy Allocate Cost- Download PDF",
+      "type": "HF",
+      "user_flg": "0",
+      "permission_category_id": "5",
+      "permission_description": "Allows users to download Cost Allocation results in PDF format."
+    },
+    "85": {
+      "nme": "Download Summary - PDF",
+      "type": "SF",
+      "user_flg": "0",
+      "permission_category_id": "4",
+      "permission_description": "Allows users to download Summary reports in PDF format."
+    },
+    "86": {
+      "nme": "Download Statement - PDF",
+      "type": "TF",
+      "user_flg": "0",
+      "permission_category_id": "2",
+      "permission_description": "Allows users to download a PDF representation of their online statement."
+    },
+    "87": {
+      "nme": "Download Detail - PDF",
+      "type": "DF",
+      "user_flg": "0",
+      "permission_category_id": "3",
+      "permission_description": "Allows users to download Detail reports in PDF format."
+    },
+    "88": {
+      "nme": "Graph - Image Exporting Permission",
+      "type": "GE",
+      "user_flg": "0",
+      "permission_category_id": "4",
+      "permission_description": "Allows users to download graphs as either JPG or PNG images."
+    },
+    "89": {
+      "nme": "Settings - Hide Accounts page available",
+      "type": "A1",
+      "user_flg": "1",
+      "permission_category_id": "9",
+      "permission_description": "Allows users to hide or unhide accounts they have access to."
+    },
+    "97": {
+      "nme": "Payment Remittance",
+      "type": "RM",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": "Pay By Mail Accepted: Toggles appearance of this menu item. Needs configurations for remittance slip and lockbox information attached to accounts (data mapping changes)."
+    },
+    "99": {
+      "nme": "Settings - Hide Accounts as admin (requires A1)",
+      "type": "A2",
+      "user_flg": "1",
+      "permission_category_id": "9",
+      "permission_description": "Allows users to hide or unhide accounts they have access to as an admin, which prevents changes from non-admin users."
+    },
+    "100": {
+      "nme": "Report Selection - Use Combined Report Select page",
+      "type": "2R",
+      "user_flg": "0",
+      "permission_category_id": "6",
+      "permission_description": "Instructs application to use combnied report select page (reportSelect.asp) instead of separate detail and summary select pages (dtlSelect.asp and summarySelect.asp, respectively)"
+    },
+    "101": {
+      "nme": "Download Hierarchy Allocate Cost- XML",
+      "type": "XH",
+      "user_flg": "0",
+      "permission_category_id": "5",
+      "permission_description": "Allows users to export Cost Allocation reports in XML format."
+    },
+    "102": {
+      "nme": "Download Summary - XML",
+      "type": "XS",
+      "user_flg": "0",
+      "permission_category_id": "4",
+      "permission_description": "Allows users to download Summary reports in XML format."
+    },
+    "103": {
+      "nme": "Download Statement - XML",
+      "type": "XT",
+      "user_flg": "0",
+      "permission_category_id": "2",
+      "permission_description": "Allows users to export online statements in XML format."
+    },
+    "104": {
+      "nme": "Download Detail - XML",
+      "type": "XD",
+      "user_flg": "0",
+      "permission_category_id": "3",
+      "permission_description": "Allows users to download Detail reports in XML format."
+    },
+    "105": {
+      "nme": "Download Assign Services - XML",
+      "type": "XA",
+      "user_flg": "0",
+      "permission_category_id": "11",
+      "permission_description": "Setup - Hierarchies - Assign Services - XML - Deprecated."
+    },
+    "106": {
+      "nme": "Report Selection - Enable Billed Summary (aka Subscriber Summary Report) Page",
+      "type": "BS",
+      "user_flg": "0",
+      "permission_category_id": "6",
+      "permission_description": "Enables use of billed summary reports (AKA subscriber summary reports) and associated pages"
+    },
+    "107": {
+      "nme": "Display page help text as subtitle",
+      "type": "TB",
+      "user_flg": "0",
+      "permission_category_id": "26",
+      "permission_description": "Display page help text as subtitle text instead of as a help icon/tooltip"
+    },
+    "110": {
+      "nme": "Post dated payments accepted",
+      "type": "PD",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": "Post-Dated Payments Accepted: Enables a date dropdown on payment submission pages."
+    },
+    "111": {
+      "nme": "Triton PCS User",
+      "type": "TU",
+      "user_flg": "0",
+      "permission_category_id": "25",
+      "permission_description": ""
+    },
+    "120": {
+      "nme": "Manage Hierarchies",
+      "type": "MH",
+      "user_flg": "0",
+      "permission_category_id": "11",
+      "permission_description": "Setup - Hierarchies - Manage Hierarchies: User based permission allowing user to create and manage public hierarchies."
+    },
+    "121": {
+      "nme": "Manage Public Hierarchies",
+      "type": "HX",
+      "user_flg": "1",
+      "permission_category_id": "11",
+      "permission_description": "Setup - Hierarchies - Manage Public Hierarchies: User based permission allowing users to manage public hierarchies, including the master hierarchy."
+    },
+    "122": {
+      "nme": "Hierarchy SubAcct CSV Download",
+      "type": "HV",
+      "user_flg": "0",
+      "permission_category_id": "11",
+      "permission_description": "Setup - Hierarchies - Assign Services – CSV - Deprecated."
+    },
+    "123": {
+      "nme": "Hierarchy - Change Master",
+      "type": "CH",
+      "user_flg": "0",
+      "permission_category_id": "11",
+      "permission_description": "Setup - Hierarchies - Change Master Hierarchy: a user based permission that allows user to edit the master public hierarchy. This hierarchy controls user/acct access in implementations where white list access is not used and is also the default hierarchy upon login."
+    },
+    "124": {
+      "nme": "Hierarchy - Branch pulldown available",
+      "type": "BP",
+      "user_flg": "0",
+      "permission_category_id": "11",
+      "permission_description": "Summary, Detail, and Map - Branch Pull Down: Toggles whether or not the hierarchy dropdown is displayed on reporting pages (allowing user to select a specific node to run the report at)."
+    },
+    "125": {
+      "nme": "Setup - Hierarchies - Manage Hierarchies - XML",
+      "type": "H1",
+      "user_flg": "0",
+      "permission_category_id": "11",
+      "permission_description": "Setup - Hierarchies - Set Hierarchy – XML export."
+    },
+    "126": {
+      "nme": "Setup – Hierarchies – Import from XML",
+      "type": "H2",
+      "user_flg": "0",
+      "permission_category_id": "11",
+      "permission_description": "Setup - Hierarchies - Import from XML: Enables functionality to allow for importing an XML hierarchy into the system. The XML hierarchy imported must match all business rules and account formatting required for a valid hierarchy."
+    },
+    "127": {
+      "nme": "Setup - Hierarchies - Manage Hierarchies - Download CSV",
+      "type": "H3",
+      "user_flg": "0",
+      "permission_category_id": "11",
+      "permission_description": "Setup - Hierarchies - Set Hierarchy – CSV export."
+    },
+    "128": {
+      "nme": "Setup - Hierarchies - Manage Hierarchies - Download PDF",
+      "type": "H4",
+      "user_flg": "0",
+      "permission_category_id": "11",
+      "permission_description": "Setup - Hierarchies - Set Hierarchy – PDF export."
+    },
+    "129": {
+      "nme": "Setup - Hierarchies - Record extended hierarchy node details",
+      "type": "HN",
+      "user_flg": "0",
+      "permission_category_id": "11",
+      "permission_description": "Record extended hierarchy node details in CSV files"
+    },
+    "130": {
+      "nme": "Setup – Hierarchies – Edit Levels",
+      "type": "H5",
+      "user_flg": "1",
+      "permission_category_id": "11",
+      "permission_description": "Setup - Hierarchies - Edit Levels: User based permission allowing for the assignment of accounts/services within public hierarchies."
+    },
+    "131": {
+      "nme": "Setup – Hierarchies – Find Level",
+      "type": "H6",
+      "user_flg": "0",
+      "permission_category_id": "11",
+      "permission_description": "Setup - Hierarchies - Find Level: Enables the find level functionality, allowing for the setting of favorite nodes, etc."
+    },
+    "132": {
+      "nme": "Setup – Hierarchies – Find/Edit Levels – CSV",
+      "type": "H7",
+      "user_flg": "0",
+      "permission_category_id": "11",
+      "permission_description": "Setup - Hierarchies - Find/Edit Levels – CSV export."
+    },
+    "133": {
+      "nme": "Setup – Hierarchies – Find/Edit Levels – XML",
+      "type": "H8",
+      "user_flg": "0",
+      "permission_category_id": "11",
+      "permission_description": "Setup - Hierarchies - Find/Edit Levels – XML export."
+    },
+    "134": {
+      "nme": "Setup – Hierarchies – Manage Private Hierarchies",
+      "type": "H9",
+      "user_flg": "0",
+      "permission_category_id": "11",
+      "permission_description": "Setup - Hierarchies - Manage Private Hierarchies: User based permission allowing users to create and manage private hierarchies that only they can see."
+    },
+    "135": {
+      "nme": "Disable Edit of Hierarchy Acct Description 1",
+      "type": "HE",
+      "user_flg": "0",
+      "permission_category_id": "11",
+      "permission_description": "Enables setting t_hierarchy_acct.description1 equal to t_acct.acct_nme in sp_load_acct_detail_audit."
+    },
+    "136": {
+      "nme": "Hierarchies - View Read Only",
+      "type": "HW",
+      "user_flg": "0",
+      "permission_category_id": "11",
+      "permission_description": ""
+    },
+    "137": {
+      "nme": "Hierarchies - Hide read-only hierarchy source checkbox",
+      "type": "HA",
+      "user_flg": "0",
+      "permission_category_id": "11",
+      "permission_description": ""
+    },
+    "138": {
+      "nme": "Hierarchies - Edit all hidden accounts in hierarchy",
+      "type": "EH",
+      "user_flg": "0",
+      "permission_category_id": "11",
+      "permission_description": ""
+    },
+    "140": {
+      "nme": "Hierarchies - Edit hidden accounts with bill data in hierarchy",
+      "type": "HD",
+      "user_flg": "0",
+      "permission_category_id": "11",
+      "permission_description": ""
+    },
+    "141": {
+      "nme": "Setup - Hierarchies - Manage service splitting",
+      "type": "HZ",
+      "user_flg": "0",
+      "permission_category_id": "11",
+      "permission_description": "Allow viewing and changes to service split percentages (if a user already able to manage the hierarchy)"
+    },
+    "144": {
+      "nme": "Settings - User Preferences available",
+      "type": "PP",
+      "user_flg": "0",
+      "permission_category_id": "9",
+      "permission_description": "Enables the 'Preferences' section. Allows users to modify a variety of their personal settings, depending on which sub-components are enabled."
+    },
+    "145": {
+      "nme": "Settings - Registration Question - City of Birth Available",
+      "type": "R1",
+      "user_flg": "0",
+      "permission_category_id": "15",
+      "permission_description": "Settings - Registration Question - City of Birth Available: Toggles whether or not city of birth is an available security question during registration."
+    },
+    "150": {
+      "nme": "Settings - Change Users",
+      "type": "CU",
+      "user_flg": "1",
+      "permission_category_id": "9",
+      "permission_description": "Restricts Admin users to only be able to manage which node a user has access to and assign/remove various admin level permissions to/from other users. This is a limitation applied to user management when a customer is using portal integration so that other components of user management stay in synch with the portal."
+    },
+    "160": {
+      "nme": "Reports - Edit Maps ",
+      "type": "ME",
+      "user_flg": "0",
+      "permission_category_id": "25",
+      "permission_description": "Map – Edit: Allows users the ability to create and edit map reports."
+    },
+    "165": {
+      "nme": "Hierarchy - Tree Builder",
+      "type": "HT",
+      "user_flg": "0",
+      "permission_category_id": "11",
+      "permission_description": "Setup - Hierarchies - Tree Builder: user based permission allowing for creating and editing of nodes within public hierarchies."
+    },
+    "197": {
+      "nme": "Multiple account payment remittance slip",
+      "type": "MR",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": "Pay By Mail Accepted (Multiple Accounts): Allows a remit slip to be created for multiple accounts as long as they have the same lockbox."
+    },
+    "200": {
+      "nme": "Summary, Detail, and Map – Data Pull-Down – All Data Listed",
+      "type": "AD",
+      "user_flg": "0",
+      "permission_category_id": "6",
+      "permission_description": "Allows for 'All Data' to be used as a reporting parameter. When selected, this means the given report will run against all currently available data that the user has access to in the system."
+    },
+    "201": {
+      "nme": "Summary, Detail, and Map – Data Pull-Down – Month Listed",
+      "type": "MO",
+      "user_flg": "0",
+      "permission_category_id": "6",
+      "permission_description": "Allows for bill months to be used as a reporting parameter. When selected, the given report will run against the selected bill month. The data records are matched to the bills available for the selected month and can include data outside of that month based on the billing cycle and what data is available."
+    },
+    "202": {
+      "nme": "Summary, Detail, and Map – Data Pull-Down – Calendar Month Listed",
+      "type": "CM",
+      "user_flg": "0",
+      "permission_category_id": "6",
+      "permission_description": "Allows for calendar months to be used as a reporting parameter. When selected, the given report will run against the selected calendar month, regardless of when the bill month is for the given data record. The data record is matched to the calendar month via the event date in the record."
+    },
+    "204": {
+      "nme": "Consolidated Statements Allowed",
+      "type": "CS",
+      "user_flg": "0",
+      "permission_category_id": "2",
+      "permission_description": "Allows users to select multiple statements and consolidate them into a single view. Line item charges that have identical statement tier descriptions will be consolidated into a single line item, while those items that have unique tiers will be merged."
+    },
+    "205": {
+      "nme": "Bank account autopay accepted",
+      "type": "AB",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": "Electronic Funds Transfer Accepted - Auto-pay: Needs to be assigned to each account eligible for auto-pay via EFT. Usually via group configuration."
+    },
+    "206": {
+      "nme": "Credit card autopay accepted",
+      "type": "CA",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": "Credit Card Charges Accepted - Auto-pay: Needs to be assigned to each account eligible for autopay via Credit Card. Usually via group configuration."
+    },
+    "220": {
+      "nme": "Statement Storage Report Permission",
+      "type": "SS",
+      "user_flg": "0",
+      "permission_category_id": "2",
+      "permission_description": "Setup - Packages - Change Statement Data Storage: Allows users to change the number of months of storage they would like to have for statement data through the UI."
+    },
+    "221": {
+      "nme": "Data Storage Report Permission",
+      "type": "DS",
+      "user_flg": "0",
+      "permission_category_id": "9",
+      "permission_description": "Setup - Packages - Change Reporting Data Storage: Allows users to change the number of months of storage they would like to have for detail data through the UI."
+    },
+    "240": {
+      "nme": "Hierachy - Allocate Cost GST Include/Exclude",
+      "type": "HG",
+      "user_flg": "0",
+      "permission_category_id": "5",
+      "permission_description": "Cost Allocation - GST Include/Exclude Option: Toggles the display of GST information in the cost allocation area. Only used for carriers that have a GST component."
+    },
+    "251": {
+      "nme": "MultiLanguage Enabled",
+      "type": "ML",
+      "user_flg": "0",
+      "permission_category_id": "16",
+      "permission_description": "Multi-Language: Enables multi-language functionality. Additional languages require configuration work."
+    },
+    "252": {
+      "nme": "Preference - Display language options",
+      "type": "EL",
+      "user_flg": "0",
+      "permission_category_id": "16",
+      "permission_description": "Setup - User Profiles - Preferences - Language Option: Allows user to choose between supported languages. Additional languages need to be configured in order for this feature to display valid options."
+    },
+    "260": {
+      "nme": "Email Alert",
+      "type": "EA",
+      "user_flg": "0",
+      "permission_category_id": "18",
+      "permission_description": "Setup - Tools – Alerts: Enables the alerting UI."
+    },
+    "261": {
+      "nme": "Account Linkage",
+      "type": "AL",
+      "user_flg": "1",
+      "permission_category_id": "9",
+      "permission_description": "Enables Account Linking, which allows Admin users to join additional accounts to their existing account. This component is ideal for scenarios where a single admin may have control over multiple corporate entities or for those billing systems that do not have the ability to link multiple accounts together in the billing system. Full implementation of this feature requires additional configuration and data mapping."
+    },
+    "262": {
+      "nme": "User Info Change Notification Email",
+      "type": "UN",
+      "user_flg": "0",
+      "permission_category_id": "9",
+      "permission_description": "Provides additional logging and reporting whenever personally identifiable information is updated. For example, when a user's email address is updated, they will be notified at the old address that an update has occured so that they can confirm that this update was intended."
+    },
+    "269": {
+      "nme": "Additional Statement Totals",
+      "type": "VA",
+      "user_flg": "0",
+      "permission_category_id": "2",
+      "permission_description": ""
+    },
+    "270": {
+      "nme": "Statement - Show Bill Status column",
+      "type": "S1",
+      "user_flg": "0",
+      "permission_category_id": "2",
+      "permission_description": "Enables inclusion of a 'Bill Status' column on the statement list page. This indicates whether a bill is a revised bill or not. This feature requires additional configuration and data mapping, as well as supporting data from the billing system in order to be fully functional."
+    },
+    "271": {
+      "nme": "Statement - Show Payment Status column",
+      "type": "S2",
+      "user_flg": "0",
+      "permission_category_id": "2",
+      "permission_description": "Display Column on statement list page - Payment Status: Toggles display of this column."
+    },
+    "272": {
+      "nme": "Statement - Show Source column",
+      "type": "S3",
+      "user_flg": "0",
+      "permission_category_id": "2",
+      "permission_description": "Enables inclusion of a 'Source' column on the statement list page. This information relates to which billing system a given account has come from and is an attribute of that account passed in during the data load. This feature requires data mapping to be fully functional and only makes sense for those implementations where multiple billing systems are being consolidated into a single presentation."
+    },
+    "273": {
+      "nme": "Statement - Show Paid Online column",
+      "type": "S4",
+      "user_flg": "0",
+      "permission_category_id": "2",
+      "permission_description": "Display Column on statement list page - Paid Online: Toggles display of this column."
+    },
+    "274": {
+      "nme": "Payment - Credit card requires billing street address",
+      "type": "P1",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": "Credit Card Requires Billing Street Address: Displays the street address as a required field when gathering CC information."
+    },
+    "275": {
+      "nme": "Payment - Credit card requires billing zip code",
+      "type": "P2",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": "Credit Card Requires Billing Zip Code: Displays the billing zip code as a required field when gathering CC information."
+    },
+    "276": {
+      "nme": "Payment - Log External Payments",
+      "type": "LE",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": "Log External Payments: Enables this sub menu functionality."
+    },
+    "277": {
+      "nme": "Statement List - Download CSV permission",
+      "type": "DL",
+      "user_flg": "0",
+      "permission_category_id": "2",
+      "permission_description": "Allows users to download a CSV representation of the Statement List area."
+    },
+    "278": {
+      "nme": "Statement List - Download PDF permission",
+      "type": "PL",
+      "user_flg": "0",
+      "permission_category_id": "2",
+      "permission_description": "Allows users to download a PDF representation of the Statement List area."
+    },
+    "279": {
+      "nme": "Statement List - Download XML permission",
+      "type": "XL",
+      "user_flg": "0",
+      "permission_category_id": "2",
+      "permission_description": "Allow users to download an XML representation of the Statement List area."
+    },
+    "280": {
+      "nme": "Credit card security code required",
+      "type": "SC",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": "Credit card security code required: This permission is only used for one time payments."
+    },
+    "284": {
+      "nme": "Edit Levels - Show Service Name Column",
+      "type": "S6",
+      "user_flg": "0",
+      "permission_category_id": "11",
+      "permission_description": ""
+    },
+    "297": {
+      "nme": "Payment - Remittance types available",
+      "type": "RT",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": "Setup - Payment Info - Remittance types available - Enables the display of user selectable remittance types on Pay By Mail pages."
+    },
+    "300": {
+      "nme": "Report Ordering Summary Available",
+      "type": "RO",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": "Summary  ROP Available (CSV by default)."
+    },
+    "301": {
+      "nme": "Report Ordering Detail Available",
+      "type": "RL",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": "Detail  ROP Available (CSV by default)."
+    },
+    "302": {
+      "nme": "Report Ordering Detail - All data selection",
+      "type": "RA",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": "Detail - Override to include all records in ordered report."
+    },
+    "303": {
+      "nme": "Report Ordering Cost Allocation Available",
+      "type": "AA",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": "Cost Allocation ROP Available."
+    },
+    "304": {
+      "nme": "Report Ordering - Output Format - Online Statement - PDF",
+      "type": "OP",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": ""
+    },
+    "305": {
+      "nme": "Report Ordering - Output Format - Online Statement - CSV",
+      "type": "OV",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": ""
+    },
+    "306": {
+      "nme": "Report Ordering - Output Format - Online Statement - XML",
+      "type": "OX",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": ""
+    },
+    "307": {
+      "nme": "Report Ordering - Output Format - Offline Statement - PDF",
+      "type": "OF",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": ""
+    },
+    "308": {
+      "nme": "Report Ordering - Output Format - Detail Package - PDF",
+      "type": "DP",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": ""
+    },
+    "309": {
+      "nme": "Report Ordering - Output Format - Detail Package - CSV",
+      "type": "PV",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": ""
+    },
+    "310": {
+      "nme": "Report Ordering – Report Frequency - Daily",
+      "type": "RD",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": "Scheduled Reports – Daily option available."
+    },
+    "311": {
+      "nme": "Report Ordering – Report Frequency - Weekly",
+      "type": "RW",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": "Scheduled Reports – Weekly option available."
+    },
+    "312": {
+      "nme": "Report Ordering – Report Frequency - Monthly",
+      "type": "RF",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": "Scheduled Reports – Monthly option available."
+    },
+    "313": {
+      "nme": "Report Ordering - Output Format - Detail Package - XML",
+      "type": "PX",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": ""
+    },
+    "314": {
+      "nme": "Report Ordering - Output Format - Raw Data",
+      "type": "OD",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": ""
+    },
+    "315": {
+      "nme": "Report Ordering - Report Frequency - On Load - Multiple Bills - Statement Orders",
+      "type": "RR",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": ""
+    },
+    "316": {
+      "nme": "Report Order Custom Statement – Data Pull-Down – All bills in a batch load",
+      "type": "BF",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": ""
+    },
+    "317": {
+      "nme": "Report Order Custom Statement – Data Pull-Down – Bills for latest billed date in a batch load",
+      "type": "BG",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": ""
+    },
+    "318": {
+      "nme": "Report Ordering - Report Frequency - On Load - Multiple Bills - Non-Statement Orders",
+      "type": "RB",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": ""
+    },
+    "320": {
+      "nme": "Report Ordering – Data Range - All data",
+      "type": "DA",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": "Data Pull-Down - All Data Available for ROP."
+    },
+    "322": {
+      "nme": "Report Ordering – Data Range - Data Month",
+      "type": "DM",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": "Data Pull-Down - Calendar Month Data Listed for ROP."
+    },
+    "330": {
+      "nme": "Report Ordering – Output Format – Summary - XML",
+      "type": "RX",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": "Summary - Format – XML for ROP."
+    },
+    "331": {
+      "nme": "Report Ordering – Output Format – Summary - PDF",
+      "type": "RZ",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": "Summary - Format – PDF for ROP."
+    },
+    "332": {
+      "nme": "Report Ordering – Output Format – Summary - Graph Image",
+      "type": "RG",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": "Summary - Format - JPG / PNG for ROP."
+    },
+    "333": {
+      "nme": "Single Sign On via header POST",
+      "type": "Z1",
+      "user_flg": "0",
+      "permission_category_id": "14",
+      "permission_description": ""
+    },
+    "335": {
+      "nme": "Report Ordering – Output Format – Detail - XML",
+      "type": "DX",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": "Detail - Format – XML for ROP."
+    },
+    "336": {
+      "nme": "Report Ordering – Output Format – Detail - PDF",
+      "type": "DZ",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": "Detail - Format – PDF for ROP."
+    },
+    "337": {
+      "nme": "Report Ordering - Threshold Redirect",
+      "type": "RS",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": "Report Ordering - Threshold Redirect: If enabled, large reports over a configurable threshold are not viewable online, but must be ordered instead. Used in conjunction with threshold custom value to determine when to redirect."
+    },
+    "338": {
+      "nme": "Report Ordering - Email Attachment Available",
+      "type": "RE",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": "Report Ordering - Email Attachment Available: Enables checkbox in ROP setup that allows users to select this option."
+    },
+    "339": {
+      "nme": "Report Ordering - Email Download URL Available",
+      "type": "RU",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": "Report Ordering - Email Download URL Available: Enables checkbox in ROP setup that allows users to select this option."
+    },
+    "340": {
+      "nme": "Report Order - SFTP Delivery",
+      "type": "FT",
+      "user_flg": "1",
+      "permission_category_id": "7",
+      "permission_description": ""
+    },
+    "341": {
+      "nme": "Report Ordering - Output Format - External Statement - PDF",
+      "type": "EX",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": ""
+    },
+    "342": {
+      "nme": "Report Ordering - Order Reports for Inactive Account",
+      "type": "RN",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": ""
+    },
+    "343": {
+      "nme": "Send external reports as unzipped attachments",
+      "type": "UA",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": ""
+    },
+    "350": {
+      "nme": "Multicurrency - common currency conversion available",
+      "type": "CO",
+      "user_flg": "1",
+      "permission_category_id": "16",
+      "permission_description": "Setup - User Profiles - Preferences - Currency Conversion Option: Toggles currency conversion feature. Data mapping and additional configuration of supported currencies are required in conjunction with this permission."
+    },
+    "351": {
+      "nme": "Multicurrency – manage organization currency rate",
+      "type": "OC",
+      "user_flg": "1",
+      "permission_category_id": "16",
+      "permission_description": "Setup - User Profiles - Preferences - Manage Organization Currency Conversion Rates: A user based permission used in conjunction with multiple currency permission that allows the user to set a corporate conversion rate to be used in reporting. Conversion rates can also be set at the user and client (default) level."
+    },
+    "352": {
+      "nme": "Multicurrency - common currency statement available",
+      "type": "OS",
+      "user_flg": "0",
+      "permission_category_id": "16",
+      "permission_description": "Currency Conversion Enabled: Allows for display of statement to be converted into another currency, using selected conversion rates. Note: Statements must always be paid in the currency in which they are billed."
+    },
+    "370": {
+      "nme": "Summary, Detail, and Map – Data Pull-Down – Statement Date Listed",
+      "type": "SR",
+      "user_flg": "0",
+      "permission_category_id": "6",
+      "permission_description": "Allows for the various statement dates to be listed in the data pulldown. This represents the set of specific statement dates that the user has access to and will limit the returned results for that report to data that comes from invoices that have that statement date."
+    },
+    "371": {
+      "nme": "Summary, Detail, and Map – Data Pull-Down – Individual Date Listed",
+      "type": "IR",
+      "user_flg": "0",
+      "permission_category_id": "6",
+      "permission_description": "Allow for a single date to be listed in the data pulldown. This will filter results in the report to only the day selected. This option is only utilized for Usage Analyst when near real time data is available and loaded on a daily basis."
+    },
+    "372": {
+      "nme": "Summary, Detail, and Map – Data Pull-Down – Current date added to Individual Date Listed",
+      "type": "CR",
+      "user_flg": "0",
+      "permission_category_id": "6",
+      "permission_description": "Allows for the current date to be added to the list of single dates to be listed in the data pulldown. This option is a modifier to the individual date component and is only utilized for Usage Analyst when near real time data is loaded on a daily basis."
+    },
+    "373": {
+      "nme": "Statement - Show Invoice Number column",
+      "type": "S5",
+      "user_flg": "0",
+      "permission_category_id": "2",
+      "permission_description": "Allows for the inclusion of the display of an 'Invoice Number' column on the statement list page. This column will show the invoice number associated to an account for a given bill. The invoice number is loaded as part of the load process and requires data mapping to be fully functional."
+    },
+    "374": {
+      "nme": "Change product bundle",
+      "type": "CP",
+      "user_flg": "0",
+      "permission_category_id": "9",
+      "permission_description": "Allows Admin users to change the product bundle that their organization is currently active on. Full use of this feature also requires that the Admin user have permission to edit account information and for there to be more than one product bundle to be configured for the customer."
+    },
+    "375": {
+      "nme": "Edit Account Information",
+      "type": "AI",
+      "user_flg": "1",
+      "permission_category_id": "9",
+      "permission_description": "Allows Admin users to edit information related to their accounts."
+    },
+    "376": {
+      "nme": "Setup - Terms and condition checkbox viewable",
+      "type": "TC",
+      "user_flg": "0",
+      "permission_category_id": "9",
+      "permission_description": "Setup - Packages - Accept Terms and Conditions: Causes the display of a terms and conditions that users need to accept when updating their storage levels."
+    },
+    "377": {
+      "nme": "Summary, Detail, and Map – Data Pull-Down – Last 24 Hours Data Listed",
+      "type": "TR",
+      "user_flg": "0",
+      "permission_category_id": "6",
+      "permission_description": "Allows for a 'Last 24 Hours' option to be available in the data dropdown. This will filter results in the report to those that have an event date within the last 24 hours. This option is only used in Usage Analyst when near real time data is loaded on a daily basis."
+    },
+    "378": {
+      "nme": "Summary, Detail, and Map – Data Pull-Down – Last 7 Days Data Listed",
+      "type": "LR",
+      "user_flg": "0",
+      "permission_category_id": "6",
+      "permission_description": "Allows for a 'Last 7 Days' option to be available in the data dropdown. This will filter results in the report to those with event dates in the last 7 days. This option is only used in Usage Analyst when near real time data is loaded on a daily basis."
+    },
+    "379": {
+      "nme": "Summary, Detail, and Map – Data Pull-Down – Calendar Week Data Listed",
+      "type": "WR",
+      "user_flg": "0",
+      "permission_category_id": "6",
+      "permission_description": "Allows for 'Calendar Weeks' to be displayed in the data dropdown. This will filter results to the records that fall within the selected calendar week. This option is only used in Usage Analyst when near real time data is loaded on a daily basis."
+    },
+    "380": {
+      "nme": "Statement to Detail - hierarchy and level viewable",
+      "type": "SZ",
+      "user_flg": "0",
+      "permission_category_id": "2",
+      "permission_description": "Show the current hierarchy and selected level when a user links to a detail report from the statement view. This information will be displayed on the resultant detail report."
+    },
+    "381": {
+      "nme": "Summary, Detail, and Map – Data Pull-Down – Last 30 days",
+      "type": "1M",
+      "user_flg": "0",
+      "permission_category_id": "6",
+      "permission_description": "Allows for a 'Last 30 Days' option to be available in the data dropdown. This will filter the resultant report to those items that have an event date within the last 30 days, based on a dynamic calculation using the day the report is run. This option is typically only activated for Usage Analyst."
+    },
+    "382": {
+      "nme": "Summary, Detail, and Map – Data Pull-Down – Last 3 months data",
+      "type": "1Q",
+      "user_flg": "0",
+      "permission_category_id": "6",
+      "permission_description": "Allows for a 'Last 3 Months Data' option to be included in the data dropdown."
+    },
+    "383": {
+      "nme": "Summary, Detail, and Map – Data Pull-Down – Last 3 months statements",
+      "type": "QS",
+      "user_flg": "0",
+      "permission_category_id": "6",
+      "permission_description": "Allows for a 'Last 3 Months Statements’ option to be included in the data dropdown."
+    },
+    "384": {
+      "nme": "Summary, Detail, and Map – Data Pull-Down – Last 6 months data",
+      "type": "1H",
+      "user_flg": "0",
+      "permission_category_id": "6",
+      "permission_description": "Allows for a 'Last 6 Months Data' option to be included in the data dropdown."
+    },
+    "385": {
+      "nme": "Summary, Detail, and Map – Data Pull-Down – Last 6 months statements",
+      "type": "HS",
+      "user_flg": "0",
+      "permission_category_id": "6",
+      "permission_description": "Allows for a 'Last 6 Months Statements’ option to be included in the data dropdown."
+    },
+    "386": {
+      "nme": "Summary, Detail, and Map – Data Pull-Down – Last 12 months data",
+      "type": "1Y",
+      "user_flg": "0",
+      "permission_category_id": "6",
+      "permission_description": "Allows for a 'Last 12 Months Data' option to be included in the data dropdown."
+    },
+    "387": {
+      "nme": "Summary, Detail, and Map – Data Pull-Down – Last 12 months statements",
+      "type": "YS",
+      "user_flg": "0",
+      "permission_category_id": "6",
+      "permission_description": "Allows for a 'Last 12 Months Statements’ option to be included in the data dropdown."
+    },
+    "389": {
+      "nme": "Payment - extension dispute timeframe",
+      "type": "DG",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": ""
+    },
+    "390": {
+      "nme": "Payment – Ability to dispute charge",
+      "type": "DI",
+      "user_flg": "1",
+      "permission_category_id": "19",
+      "permission_description": "Payment – Ability to dispute charged."
+    },
+    "391": {
+      "nme": "Setup - Hierarchies - Import Update",
+      "type": "HU",
+      "user_flg": "0",
+      "permission_category_id": "11",
+      "permission_description": "Setup - Hierarchies - Import Update – When importing hierarchy, allows user to select between importing as a new hierarchy, or updating an existing hierarchy."
+    },
+    "392": {
+      "nme": "Payment – User must accept Terms and Conditions when Making Payment",
+      "type": "TE",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": "Payment – User must accept Terms and Conditions when Making Payment: Displays a terms and conditions area and a checkbox that the user must check before they can submit a payment."
+    },
+    "393": {
+      "nme": "Statements - Compare to previous",
+      "type": "SP",
+      "user_flg": "0",
+      "permission_category_id": "2",
+      "permission_description": "Allows users to compare a given statement to one or more previous statements. Users can choose to compare back as far as they have data in the system. This feature works with both single and consolidated views and shows a percentage change to the current statement for those tiers that are exact matches."
+    },
+    "394": {
+      "nme": "Statements - Account Grouping",
+      "type": "SG",
+      "user_flg": "0",
+      "permission_category_id": "2",
+      "permission_description": "Allows for the inclusion of a statement grouping option so that users can group accounts on the statement list page by common attributes such as the bill date."
+    },
+    "395": {
+      "nme": "Statements - Display Additional Info for Multiple Bills",
+      "type": "SI",
+      "user_flg": "0",
+      "permission_category_id": "2",
+      "permission_description": "Allows the display of additional information for consolidated account scenarios. This information is loaded as an extra report type and requires data mapping and additional configuration in order to be fully functional."
+    },
+    "396": {
+      "nme": "Statements - Account Grouping - hiearchy groups available",
+      "type": "SY",
+      "user_flg": "0",
+      "permission_category_id": "2",
+      "permission_description": "Allows for the inclusion of hierarchy related fields such as 'Account Description 1'"
+    },
+    "397": {
+      "nme": "Negative Sign in Statements",
+      "type": "NS",
+      "user_flg": "0",
+      "permission_category_id": "2",
+      "permission_description": ""
+    },
+    "399": {
+      "nme": "Statements - Display account info",
+      "type": "SA",
+      "user_flg": "0",
+      "permission_category_id": "2",
+      "permission_description": "Statements - Display account info – Enables a checkbox to display information about which account a charge belongs to when viewing a consolidated statement."
+    },
+    "404": {
+      "nme": "Ability to make a payment across multiple accounts",
+      "type": "P3",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": "Enables payment of grouped statements. If statements are grouped and if this permission is not enabled, the Make Payment button will be greyed out."
+    },
+    "405": {
+      "nme": "Summary-Detail-Download-XML",
+      "type": "XU",
+      "user_flg": "0",
+      "permission_category_id": "4",
+      "permission_description": "Allows users to download XML versions of the drilldown views of the reports."
+    },
+    "406": {
+      "nme": "Summary-Detail-Download-CSV",
+      "type": "SU",
+      "user_flg": "0",
+      "permission_category_id": "4",
+      "permission_description": "Allow users to download CSV versions of the drilldown views of the reports."
+    },
+    "407": {
+      "nme": "Summary-Detail-Download-PDF",
+      "type": "PU",
+      "user_flg": "0",
+      "permission_category_id": "4",
+      "permission_description": "Allow users to download PDF versions of the drilldown views of the reports."
+    },
+    "408": {
+      "nme": "Edit Global Descriptions",
+      "type": "MD",
+      "user_flg": "1",
+      "permission_category_id": "25",
+      "permission_description": "Setup - Edit Global Descriptions: A user based permission granting the user the ability to edit descriptions in the Global phone book."
+    },
+    "409": {
+      "nme": "Export Global Descriptions",
+      "type": "E1",
+      "user_flg": "0",
+      "permission_category_id": "25",
+      "permission_description": "Setup - Export Global Descriptions: Enables the export/import of global descriptions as a CSV file."
+    },
+    "410": {
+      "nme": "Global Descriptions",
+      "type": "GD",
+      "user_flg": "0",
+      "permission_category_id": "25",
+      "permission_description": "Setup - Global Descriptions: Enables the view of global descriptions in the setup area. Requires data mapping and configuration elements to also make use of this information in reporting."
+    },
+    "411": {
+      "nme": "Message Center Available",
+      "type": "M1",
+      "user_flg": "0",
+      "permission_category_id": "23",
+      "permission_description": "Message Center Available: Requires custom integration."
+    },
+    "412": {
+      "nme": "Message Center News Available",
+      "type": "M2",
+      "user_flg": "0",
+      "permission_category_id": "23",
+      "permission_description": "Message Center News Available."
+    },
+    "413": {
+      "nme": "Message Center Mail Available",
+      "type": "M3",
+      "user_flg": "0",
+      "permission_category_id": "23",
+      "permission_description": "Message Center Mail Available."
+    },
+    "414": {
+      "nme": "Highlights Available",
+      "type": "HI",
+      "user_flg": "0",
+      "permission_category_id": "1",
+      "permission_description": "Highlights Available."
+    },
+    "415": {
+      "nme": "Message Center Type Column Available",
+      "type": "M4",
+      "user_flg": "0",
+      "permission_category_id": "23",
+      "permission_description": "Message Center Type Column Available."
+    },
+    "416": {
+      "nme": "Message Center Invoice Type Filter Available",
+      "type": "M5",
+      "user_flg": "0",
+      "permission_category_id": "23",
+      "permission_description": "Message Center Invoice Type Filter Available."
+    },
+    "417": {
+      "nme": "Home Page Product Selection",
+      "type": "PT",
+      "user_flg": "0",
+      "permission_category_id": "1",
+      "permission_description": "Home Page Product Selection: Toggles whether or not the home page allows the user to switch between products (for example, Bill Analyst and Usage Analyst). Requires multiple products to be configured in a product bundle to function."
+    },
+    "418": {
+      "nme": "Display Assigned Column on Edit Levels",
+      "type": "D1",
+      "user_flg": "0",
+      "permission_category_id": "11",
+      "permission_description": "Setup - Hierarchies - Display Assigned Column on Edit Levels: Toggles the display of the assigned column (which node a service/account is assigned to) on the edit levels page."
+    },
+    "420": {
+      "nme": "Message Center End Date Available",
+      "type": "M6",
+      "user_flg": "0",
+      "permission_category_id": "23",
+      "permission_description": "Message Center End Date Available."
+    },
+    "440": {
+      "nme": "Amount Paid Column",
+      "type": "AP",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": "Display Amount Paid Column on statement list page: Toggles display of this column."
+    },
+    "442": {
+      "nme": "Third phone number description",
+      "type": "D3",
+      "user_flg": "0",
+      "permission_category_id": "25",
+      "permission_description": "Third phone number description on global descriptions: Adds an optional third description field to the global phone book functionality. Requires reporting configuration changes to make use of this information."
+    },
+    "445": {
+      "nme": "BA - Profile - Paperless Billing Available",
+      "type": "PB",
+      "user_flg": "0",
+      "permission_category_id": "9",
+      "permission_description": "Enables Paperless Billing, which exposes a simple UI that allows users to turn paper on or off for a given account. This feature requires batch file integration with the billing system in order to be fully functional."
+    },
+    "446": {
+      "nme": "BA - Profile - Confirm Paperless Billing",
+      "type": "PO",
+      "user_flg": "0",
+      "permission_category_id": "9",
+      "permission_description": ""
+    },
+    "448": {
+      "nme": "Failed Login Soft Lock",
+      "type": "SL",
+      "user_flg": "0",
+      "permission_category_id": "14",
+      "permission_description": ""
+    },
+    "449": {
+      "nme": "Disables ALL option in CAT user search",
+      "type": "CZ",
+      "user_flg": "0",
+      "permission_category_id": "24",
+      "permission_description": ""
+    },
+    "500": {
+      "nme": "Service Inventory Management",
+      "type": "IM",
+      "user_flg": "1",
+      "permission_category_id": "25",
+      "permission_description": "Setup - Service Inventory Management: deprecated feature."
+    },
+    "510": {
+      "nme": "Mobile Management - Service Director",
+      "type": "SV",
+      "user_flg": "0",
+      "permission_category_id": "20",
+      "permission_description": ""
+    },
+    "511": {
+      "nme": "Budget Management - Feature",
+      "type": "BU",
+      "user_flg": "0",
+      "permission_category_id": "9",
+      "permission_description": "Allows the inclusion of a budget column on the statement list page. This column will indicate whether a current invoice is above or below an established budget. A user interface for specifying budget information will be made available in the Setup area."
+    },
+    "512": {
+      "nme": "Mobile Management - Device Manager",
+      "type": "DV",
+      "user_flg": "0",
+      "permission_category_id": "20",
+      "permission_description": ""
+    },
+    "515": {
+      "nme": "Dashboard - Account/Service",
+      "type": "AS",
+      "user_flg": "0",
+      "permission_category_id": "9",
+      "permission_description": ""
+    },
+    "517": {
+      "nme": "Split Billing - User Management",
+      "type": "UM",
+      "user_flg": "0",
+      "permission_category_id": "21",
+      "permission_description": ""
+    },
+    "518": {
+      "nme": "Split Billing - Send Results Preference",
+      "type": "PR",
+      "user_flg": "0",
+      "permission_category_id": "21",
+      "permission_description": ""
+    },
+    "520": {
+      "nme": "Connection manager - Max personal responsibility option",
+      "type": "PM",
+      "user_flg": "0",
+      "permission_category_id": "21",
+      "permission_description": ""
+    },
+    "560": {
+      "nme": "iFrame Modules on Home Page",
+      "type": "IF",
+      "user_flg": "0",
+      "permission_category_id": "1",
+      "permission_description": ""
+    },
+    "565": {
+      "nme": "Offer Optimization on Home Page",
+      "type": "OO",
+      "user_flg": "0",
+      "permission_category_id": "1",
+      "permission_description": ""
+    },
+    "600": {
+      "nme": "PIN Authentication",
+      "type": "PI",
+      "user_flg": "0",
+      "permission_category_id": "15",
+      "permission_description": "PIN Authentication - User self-registration requires PIN authentication via a separate call to client provided API: client specific. Requires custom integration."
+    },
+    "610": {
+      "nme": "Pmt Remit Supress Prev Pmt",
+      "type": "PS",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": ""
+    },
+    "620": {
+      "nme": "Bell DTS CCN Tokenization",
+      "type": "P4",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": ""
+    },
+    "630": {
+      "nme": "Account Group - Management",
+      "type": "AG",
+      "user_flg": "1",
+      "permission_category_id": "9",
+      "permission_description": "Allows Admin users to create and manage groups of accounts that can be used for reporting. Admin users can also grant this capability to other users. This feature requires that the customer is utilizing the whitelist approach to account/user access as opposed to the internal hierarchy access mechanism. These two access mechanisms are mutually exclusive and the whitelist approach requires additional API integration to be fully functional."
+    },
+    "631": {
+      "nme": "Account Group - Statment list page display",
+      "type": "AJ",
+      "user_flg": "0",
+      "permission_category_id": "2",
+      "permission_description": "Enables the display of Account Groups in the filter dropdowns. These are the account groupings created by the users. This feature should only be enabled if Account Grouping and the whitelist approach to account access have been implemented."
+    },
+    "640": {
+      "nme": "Report Order List Export",
+      "type": "OE",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": ""
+    },
+    "650": {
+      "nme": "Statement - Display Total Amt Due when Balance Fwd missing",
+      "type": "S7",
+      "user_flg": "0",
+      "permission_category_id": "2",
+      "permission_description": "Enables the display of a total amount due component even if there is no Balance Forward component to the online statement. Typically the online statement expects there to be at least a Balance Forward and a Current Charges section in order to display totals."
+    },
+    "660": {
+      "nme": "Display product select on manage users for type 3 users",
+      "type": "PN",
+      "user_flg": "0",
+      "permission_category_id": "9",
+      "permission_description": "Allows CSR users to change the product that a user would see by default when logging in via the manage users UI. This option is typically hidden from CSR users since they are not viewed as Admin users."
+    },
+    "670": {
+      "nme": "Error Page Supress Additional Info",
+      "type": "E2",
+      "user_flg": "0",
+      "permission_category_id": "12",
+      "permission_description": ""
+    },
+    "680": {
+      "nme": "Help Page Next Back Use Lang Const",
+      "type": "HL",
+      "user_flg": "0",
+      "permission_category_id": "12",
+      "permission_description": ""
+    },
+    "690": {
+      "nme": "Download Center",
+      "type": "DO",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": ""
+    },
+    "691": {
+      "nme": "Statement Types Filter",
+      "type": "ST",
+      "user_flg": "0",
+      "permission_category_id": "2",
+      "permission_description": ""
+    },
+    "695": {
+      "nme": "Four level Summary Grouping",
+      "type": "G4",
+      "user_flg": "0",
+      "permission_category_id": "4",
+      "permission_description": ""
+    },
+    "700": {
+      "nme": "Display values in pie graphs as percents",
+      "type": "GP",
+      "user_flg": "0",
+      "permission_category_id": "4",
+      "permission_description": "Allows the display of values on pie graphs as percentages rather than fixed units."
+    },
+    "710": {
+      "nme": "Graph Options use button image",
+      "type": "GB",
+      "user_flg": "0",
+      "permission_category_id": "4",
+      "permission_description": "Determines whether the graph options button is displayed using image or stylesheet components. When turned on the image is used."
+    },
+    "720": {
+      "nme": "Report Ordering – Detail Reports - Default to include all available records",
+      "type": "D2",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": ""
+    },
+    "730": {
+      "nme": "Auth required for personal info manage users",
+      "type": "AU",
+      "user_flg": "0",
+      "permission_category_id": "9",
+      "permission_description": "Forces a user to re-enter their access credentials when trying to make changes to personal information or manage internal users. This is an additional safeguard against unwanted changes being made by CSR users. Only valid in non-portal integrated scenarios where the user has an internal application password."
+    },
+    "740": {
+      "nme": "Update Dispute Status on Dispute History Page",
+      "type": "DU",
+      "user_flg": "0",
+      "permission_category_id": "19",
+      "permission_description": ""
+    },
+    "741": {
+      "nme": "Post Message allowed on Dispute History Page (3.0+ only)",
+      "type": "DJ",
+      "user_flg": "0",
+      "permission_category_id": "19",
+      "permission_description": ""
+    },
+    "749": {
+      "nme": "PrePayment Workflow Logic",
+      "type": "PW",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": ""
+    },
+    "750": {
+      "nme": "Alternate remittance logic for Telstra",
+      "type": "TL",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": ""
+    },
+    "751": {
+      "nme": "Report Order Summary, Detail, and Map – Data Pull-Down – Last 30 days",
+      "type": "MS",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": ""
+    },
+    "752": {
+      "nme": "Report Order Summary, Detail, and Map – Data Pull-Down – Last 3 months data",
+      "type": "OQ",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": ""
+    },
+    "753": {
+      "nme": "Report Order Summary, Detail, and Map – Data Pull-Down – Last 3 months statements",
+      "type": "OR",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": ""
+    },
+    "754": {
+      "nme": "Report Order Summary, Detail, and Map – Data Pull-Down – Last 6 months data",
+      "type": "OH",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": ""
+    },
+    "755": {
+      "nme": "Report Order Summary, Detail, and Map – Data Pull-Down – Last 6 months statements",
+      "type": "OI",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": ""
+    },
+    "756": {
+      "nme": "Report Order Summary, Detail, and Map – Data Pull-Down – Last 12 months data",
+      "type": "OY",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": ""
+    },
+    "757": {
+      "nme": "Report Order Summary, Detail, and Map – Data Pull-Down – Last 12 months statements",
+      "type": "OZ",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": ""
+    },
+    "758": {
+      "nme": "Dashboard Monthly spend - suppress current_charges option from dropdown",
+      "type": "D9",
+      "user_flg": "0",
+      "permission_category_id": "1",
+      "permission_description": ""
+    },
+    "760": {
+      "nme": "Display due dt, inv num & tot due on stmt csv & xml export",
+      "type": "E3",
+      "user_flg": "0",
+      "permission_category_id": "2",
+      "permission_description": ""
+    },
+    "761": {
+      "nme": "Add/Update SMS Number",
+      "type": "MX",
+      "user_flg": "0",
+      "permission_category_id": "18",
+      "permission_description": ""
+    },
+    "762": {
+      "nme": "SMS message for Statement Load Delivery Available",
+      "type": "MY",
+      "user_flg": "0",
+      "permission_category_id": "18",
+      "permission_description": ""
+    },
+    "763": {
+      "nme": "Report Order - SMS Delivery",
+      "type": "MZ",
+      "user_flg": "0",
+      "permission_category_id": "18",
+      "permission_description": ""
+    },
+    "764": {
+      "nme": "Statement Disputes - create/edit",
+      "type": "DE",
+      "user_flg": "0",
+      "permission_category_id": "19",
+      "permission_description": ""
+    },
+    "765": {
+      "nme": "Statement Disputes - READ ONLY",
+      "type": "DY",
+      "user_flg": "0",
+      "permission_category_id": "19",
+      "permission_description": ""
+    },
+    "766": {
+      "nme": "CTL Advanced Filters ENGLISH ONLY",
+      "type": "AF",
+      "user_flg": "0",
+      "permission_category_id": "8",
+      "permission_description": ""
+    },
+    "767": {
+      "nme": "Report Order Custom Statement – Data Pull-Down – Last 3 months custom statements",
+      "type": "RQ",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": ""
+    },
+    "768": {
+      "nme": "Report Order Custom Statement – Data Pull-Down – Last 6 months custom statements",
+      "type": "RH",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": ""
+    },
+    "769": {
+      "nme": "Report Order Custom Statement – Data Pull-Down – Last 12 months custom statements",
+      "type": "RY",
+      "user_flg": "0",
+      "permission_category_id": "7",
+      "permission_description": ""
+    },
+    "770": {
+      "nme": "Error Page Supress TimeStamp, Server & IP",
+      "type": "E4",
+      "user_flg": "0",
+      "permission_category_id": "24",
+      "permission_description": ""
+    },
+    "784": {
+      "nme": "Enable Arabic PDFs, CSVs with English as selected BA language",
+      "type": "PA",
+      "user_flg": "0",
+      "permission_category_id": "16",
+      "permission_description": ""
+    },
+    "790": {
+      "nme": "Enable verbose Offline Documents logging to database",
+      "type": "BD",
+      "user_flg": "0",
+      "permission_category_id": "17",
+      "permission_description": ""
+    },
+    "800": {
+      "nme": "Payments: See User Methods only",
+      "type": "UO",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": ""
+    },
+    "805": {
+      "nme": "Custom Statment Table Processing",
+      "type": "TQ",
+      "user_flg": "0",
+      "permission_category_id": "2",
+      "permission_description": ""
+    },
+    "806": {
+      "nme": "Remove USI code from Level dropdown",
+      "type": "NU",
+      "user_flg": "0",
+      "permission_category_id": "2",
+      "permission_description": ""
+    },
+    "807": {
+      "nme": "Display Selected Level Name on PaymentEnter Pages",
+      "type": "LD",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": ""
+    },
+    "810": {
+      "nme": "Allow ordering of statement with details",
+      "type": "RI",
+      "user_flg": "0",
+      "permission_category_id": "2",
+      "permission_description": ""
+    },
+    "815": {
+      "nme": "Statement - View Monthly PDF Customizations",
+      "type": "SN",
+      "user_flg": "0",
+      "permission_category_id": "2",
+      "permission_description": ""
+    },
+    "820": {
+      "nme": "Allow use of dashboard2 service",
+      "type": "DB",
+      "user_flg": "0",
+      "permission_category_id": "1",
+      "permission_description": ""
+    },
+    "830": {
+      "nme": "Use CC Realtime Payment Gateway",
+      "type": "PG",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": ""
+    },
+    "831": {
+      "nme": "Use EFT Realtime Payment Gateway",
+      "type": "EG",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": ""
+    },
+    "840": {
+      "nme": "Payment - Remittance View Hierarchy Node",
+      "type": "RV",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": ""
+    },
+    "845": {
+      "nme": "Payments - Simplified Rules Frontier",
+      "type": "PF",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": ""
+    },
+    "848": {
+      "nme": "Payments - Do Not Allow Multiple Account Types",
+      "type": "NM",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": ""
+    },
+    "849": {
+      "nme": "Payments - Allow Zero or Negative Amounts at Account Level - Do Not Include in Group Sum",
+      "type": "ZA",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": ""
+    },
+    "860": {
+      "nme": "Authorized to make Globys payments",
+      "type": "PY",
+      "user_flg": "1",
+      "permission_category_id": "13",
+      "permission_description": ""
+    },
+    "20000": {
+      "nme": "Payflow Pro Payment",
+      "type": "00",
+      "user_flg": "0",
+      "permission_category_id": "13",
+      "permission_description": "Payflow Pro Payment – Enables usage of Payflow Pro for payment processing. Requires custom integration with PayFlow Pro."
+    },
+    "20001": {
+      "nme": "BPM - Payment - Make Zero Balance Payments",
+      "type": "01",
+      "user_flg": "0",
+      "permission_category_id": "22",
+      "permission_description": "Allow zero balance payment: Allows users to make a pre-payment on an invoice even if there is no balance due."
+    },
+    "20002": {
+      "nme": "BPM - Profile - Paperless Billing Available",
+      "type": "02",
+      "user_flg": "0",
+      "permission_category_id": "22",
+      "permission_description": ""
+    },
+    "20010": {
+      "nme": "BPM - Reporting - View Current Usage Summary",
+      "type": "10",
+      "user_flg": "0",
+      "permission_category_id": "22",
+      "permission_description": "Enables Summary Reporting within BPM. This allows users to run pre-defined summary reports against their data. This feature requires data mapping and additional configuration to be fully functional."
+    },
+    "20011": {
+      "nme": "BPM - Reporting - View Current Usage Detail",
+      "type": "11",
+      "user_flg": "0",
+      "permission_category_id": "22",
+      "permission_description": "Enables Detail Reporting within BPM. This allows users to run pre-defined detail reports against their data. This feature requires data mapping and additional configuration to be fully functional."
+    },
+    "20012": {
+      "nme": "BPM - Disputes",
+      "type": "12",
+      "user_flg": "0",
+      "permission_category_id": "22",
+      "permission_description": ""
+    },
+    "20013": {
+      "nme": "BPM - Phonebook",
+      "type": "13",
+      "user_flg": "0",
+      "permission_category_id": "22",
+      "permission_description": ""
+    },
+    "20014": {
+      "nme": "BPM - Message Center Available",
+      "type": "14",
+      "user_flg": "0",
+      "permission_category_id": "22",
+      "permission_description": ""
+    },
+    "20015": {
+      "nme": "BPM - Message Center News Available",
+      "type": "15",
+      "user_flg": "0",
+      "permission_category_id": "22",
+      "permission_description": ""
+    },
+    "20016": {
+      "nme": "BPM - Message Center Mail Available",
+      "type": "16",
+      "user_flg": "0",
+      "permission_category_id": "22",
+      "permission_description": ""
+    },
+    "20017": {
+      "nme": "BPM - Message Center Type Column Available",
+      "type": "17",
+      "user_flg": "0",
+      "permission_category_id": "22",
+      "permission_description": ""
+    },
+    "20018": {
+      "nme": "BPM - Message Center Invoice Type Filter Available",
+      "type": "18",
+      "user_flg": "0",
+      "permission_category_id": "22",
+      "permission_description": ""
+    },
+    "20019": {
+      "nme": "BPM - Message Center End Date Available",
+      "type": "19",
+      "user_flg": "0",
+      "permission_category_id": "22",
+      "permission_description": ""
+    },
+    "20020": {
+      "nme": "BPM - Bill Documents",
+      "type": "BL",
+      "user_flg": "0",
+      "permission_category_id": "22",
+      "permission_description": ""
+    },
+    "20021": {
+      "nme": "Report Ordering - Bill Documents",
+      "type": "BO",
+      "user_flg": "0",
+      "permission_category_id": "17",
+      "permission_description": ""
+    },
+    "20022": {
+      "nme": "Bill Documents - Allow Single-click document download",
+      "type": "BC",
+      "user_flg": "0",
+      "permission_category_id": "17",
+      "permission_description": ""
+    },
+    "20023": {
+      "nme": "Remove Primary Navigation Bar",
+      "type": "NV",
+      "user_flg": "0",
+      "permission_category_id": "26",
+      "permission_description": "When configured, it hides the the primary navigation bar across all pages"
+    },
+    "20024": {
+      "nme": "Remove Breadcrumbs",
+      "type": "BR",
+      "user_flg": "0",
+      "permission_category_id": "26",
+      "permission_description": "When configured, it hides the the breadcrumbs across all pages"
+    },
+    "20025": {
+      "nme": "Remove hierarchy subnav tabs",
+      "type": "HB",
+      "user_flg": "0",
+      "permission_category_id": "26",
+      "permission_description": "When configured, it hides the the hierarchy subnavigation bar across all hierarchy-related pages"
+    },
+    "20026": {
+      "nme": "Remove view order status button",
+      "type": "SB",
+      "user_flg": "0",
+      "permission_category_id": "26",
+      "permission_description": "When configured, it hides the the view order status across all pages that use it"
+    },
+    "20027": {
+      "nme": "Remove full screen button",
+      "type": "FS",
+      "user_flg": "0",
+      "permission_category_id": "26",
+      "permission_description": "When configured, it hides the the full screen button across all pages that use it"
+    }
+  }
+}
