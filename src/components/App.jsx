@@ -1,10 +1,10 @@
-import React from "react";
-import { Switch, Route, withRouter } from "react-router-dom";
-import { connect } from "react-redux";
-import PropTypes from "prop-types";
-import * as actions from "./../actions";
+import React from 'react';
+import { Switch, Route, withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import * as actions from './../actions';
 
-import Error404 from "./Error404";
+import Error404 from './Error404';
 
 class App extends React.Component {
   constructor(props) {

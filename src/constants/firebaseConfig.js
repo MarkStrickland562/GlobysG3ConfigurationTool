@@ -6,3 +6,5 @@ const firebaseConfig = {
   storageBucket: "globysg3configurationtool.appspot.com",
   messagingSenderId: "737495831111"
 };
+
+export default firebaseConfig;

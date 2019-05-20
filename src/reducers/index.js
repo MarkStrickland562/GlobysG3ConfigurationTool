@@ -5,7 +5,7 @@ import selectedProductReducer from "./selected-product-reducer";
 import groupsReducer from "./groups-reducer";
 import selectedGroupReducer from "./selected-group-reducer";
 import permissionsReducer from "./permissions-reducer";
-import permissionCategoriesReducer from "./permissionCategories-reducer";
+import permissionCategoriesReducer from "./permission-categories-reducer";
 import clientPermissionsReducer from "./clientPermissions-reducer";
 import productPermissionsReducer from "./productPermissions-reducer";
 import groupPermissionsReducer from "./groupPermissions-reducer";
