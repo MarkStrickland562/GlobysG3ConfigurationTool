@@ -75,7 +75,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template:'template.ejs',
       appMountId: 'react-app-root',
-      title: 'Event Planner',
+      title: 'Globys G3 Configuration Tool',
       filename: resolve(__dirname, "build", "index.html"),
     }),
   ]

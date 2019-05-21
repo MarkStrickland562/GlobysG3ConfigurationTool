@@ -1,7 +1,7 @@
 import React from 'react';
 import NavBar from './NavBar';
 
-function Main() {
+function AddProductForm() {
   return (
     <div>
       <NavBar />
@@ -10,4 +10,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default AddProductForm;

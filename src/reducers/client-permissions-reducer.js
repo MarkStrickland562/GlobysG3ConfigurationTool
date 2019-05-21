@@ -1,11 +1,11 @@
-import constants from "./../constants";
+import constants from './../constants';
 const { c } = constants;
 
-export default (state = {}, action) => {};
-let newState;
-const { id, client_id, permission_id } = action;
+export default (state = {}, action) => {
+  let newState;
+  const { id, client_id, permission_id } = action;
 
-switch (action.type) {
+  switch (action.type) {
   case c.ADD_CLIENT_PERMISSION: {
     newState = Object.assign({}, state, {
       [id]: {
@@ -34,7 +34,7 @@ switch (action.type) {
   }
   case c.RECEIVE_CLIENT_PERMISSION: {
     newState = Object.assign({}, state);
-    newState[action.clientPermission.id] = action.clientPermissionId;
+    newState[action.clientPermission.id] = action.clientPermission;
     return newState;
   }
   case c.RECEIVE_DELETED_CLIENT_PERMISSION: {
@@ -45,4 +45,5 @@ switch (action.type) {
   default: {
     return state;
   }
-}
+  }
+};

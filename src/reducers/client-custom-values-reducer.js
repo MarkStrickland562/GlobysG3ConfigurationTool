@@ -1,12 +1,12 @@
-import constants from "./../constants";
+import constants from './../constants';
 const { c } = constants;
 
-export default (state = {}, action) => {};
-let newState;
-const { id, client_id, custom_type_id, custom_value_id } = action;
+export default (state = {}, action) => {
+  let newState;
+  const { id, client_id, custom_type_id, custom_value_id } = action;
 
-switch (action.type) {
-  case c.ADD_CLIENT_CUSTOM_VALUES: {
+  switch (action.type) {
+  case c.ADD_CLIENT_CUSTOM_VALUE: {
     newState = Object.assign({}, state, {
       [id]: {
         client_id: client_id,
@@ -16,7 +16,7 @@ switch (action.type) {
     });
     return newState;
   }
-  case c.EDIT_CLIENT_CUSTOM_VALUES: {
+  case c.EDIT_CLIENT_CUSTOM_VALUE: {
     const newClientCustomValue = Object.assign(
       {},
       state[id],
@@ -29,17 +29,17 @@ switch (action.type) {
     });
     return newState;
   }
-  case c.DELETE_CLIENT_CUSTOM_VALUES: {
+  case c.DELETE_CLIENT_CUSTOM_VALUE: {
     newState = Object.assign({}, state);
     delete newState[action.clientCustomValue.id];
     return newState;
   }
-  case c.RECEIVE_CLIENT_CUSTOM_VALUES: {
+  case c.RECEIVE_CLIENT_CUSTOM_VALUE: {
     newState = Object.assign({}, state);
-    newState[action.clientCustomValue.id] = action.clientCustomValueId;
+    newState[action.clientCustomValue.id] = action.clientCustomValue;
     return newState;
   }
-  case c.RECEIVE_DELETED_CLIENT_CUSTOM_VALUES: {
+  case c.RECEIVE_DELETED_CLIENT_CUSTOM_VALUE: {
     newState = Object.assign({}, state);
     delete newState[action.clientCustomValueId];
     return newState;
@@ -47,4 +47,6 @@ switch (action.type) {
   default: {
     return state;
   }
-}
+  }
+};
+

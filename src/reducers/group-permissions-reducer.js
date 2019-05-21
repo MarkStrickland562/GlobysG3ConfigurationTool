@@ -1,11 +1,11 @@
-import constants from "./../constants";
+import constants from './../constants';
 const { c } = constants;
 
-export default (state = {}, action) => {};
-let newState;
-const { id, group_id, permission_id } = action;
+export default (state = {}, action) => {
+  let newState;
+  const { id, group_id, permission_id } = action;
 
-switch (action.type) {
+  switch (action.type) {
   case c.ADD_GROUP_PERMISSION: {
     newState = Object.assign({}, state, {
       [id]: {
@@ -34,7 +34,7 @@ switch (action.type) {
   }
   case c.RECEIVE_GROUP_PERMISSION: {
     newState = Object.assign({}, state);
-    newState[action.groupPermission.id] = action.groupPermissionId;
+    newState[action.groupPermission.id] = action.groupPermission;
     return newState;
   }
   case c.RECEIVE_DELETED_GROUP_PERMISSION: {
@@ -45,4 +45,5 @@ switch (action.type) {
   default: {
     return state;
   }
-}
+  }
+};

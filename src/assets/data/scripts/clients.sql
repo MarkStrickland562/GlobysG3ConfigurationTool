@@ -1,6 +1,6 @@
 declare @json varchar(max) = '{'
 select @json = @json +  char(10) + char(9) + '"clients": ' + '{' + char(10) +
-       char(9) + char(9) + '"1": ' + '{' +  + char(10) +
+       char(9) + char(9) + '"' + convert(varchar, client_id) + '": ' + '{' +  + char(10) +
 	   char(9) + char(9) + char(9) + char(9) + char(9) + '"nme": ' + '"' + nme + '",' + char(10) +
 	   char(9) + char(9) + char(9) + char(9) + char(9) + '"encrypt_key": ' + '"' + encrypt_key + '",' + char(10) +
 	   char(9) + char(9) + char(9) + char(9) + char(9) + '"external_id": ' + '"'  + '000000000' + '",' + char(10) +

@@ -5,9 +5,25 @@ import PropTypes from 'prop-types';
 import * as actions from './../actions';
 
 import Error404 from './Error404';
+import Main from './Main';
+import Clients from './Clients';
+import AddClientForm from './AddClientForm';
+import EditClientForm from './EditClientForm';
+import DeleteClientForm from './DeleteClientForm';
+import Groups from './Groups';
+import AddGroupForm from './AddGroupForm';
+import EditGroupForm from './EditGroupForm';
+import DeleteGroupForm from './DeleteGroupForm';
+import Products from './Products';
+import AddProductForm from './AddProductForm';
+import EditProductForm from './EditProductForm';
+import DeleteProductForm from './DeleteProductForm';
+import ConfigurePermissionsForm from './ConfigurePermissionsForm';
+import ConfigureCustomValuesForm from './ConfigureCustomValuesForm';
 
 class App extends React.Component {
   constructor(props) {
+    super(props);
     this.handleRouteBack = this.handleRouteBack.bind(this);
   }
 
@@ -120,7 +136,7 @@ class App extends React.Component {
             />
             <Route
               path="/products"
-              render={() => <Products products={this.props.masterproducts} />}
+              render={() => <Products products={this.props.masterProducts} />}
             />
             <Route
               path="/addproduct"
@@ -143,13 +159,25 @@ class App extends React.Component {
             <Route
               path="/configurepermissions"
               render={() => (
-                <ConfigurePermissionsForm onFormSubmit={this.handleRouteBack} />
+                <ConfigurePermissionsForm
+                  permissions={this.masterPermissions}
+                  permissionCategories={this.masterPermissionCategories}
+                  clientPermissions={this.clientPermissions}
+                  productPermissions={this.productPermissions}
+                  groupPermissions={this.groupPermissions}
+                  productUserTypePermissions={this.productUserTypePermissions}
+                  onFormSubmit={this.handleRouteBack} />
               )}
             />
             <Route
               path="/configurecustomvalues"
               render={() => (
                 <ConfigureCustomValuesForm
+                  customValues={this.masterCustomValues}
+                  customTypes={this.masterCustomTypes}
+                  clientCustomValues={this.masterClientCustomValues}
+                  productCustomValues={this.masterProductCustomValues}
+                  groupCustomValues={this.masterGroupCustomValues}
                   onFormSubmit={this.handleRouteBack}
                 />
               )}

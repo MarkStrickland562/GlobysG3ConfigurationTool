@@ -1,8 +1,8 @@
-import constants from "./../constants";
+import constants from './../constants';
 const { firebaseConfig, c } = constants;
 
 /*eslint-disable */
-import Firebase from "firebase";
+import Firebase from 'firebase';
 
 firebase.initializeApp(firebaseConfig);
 
@@ -60,7 +60,7 @@ export function addClient(
       default_currency_id: _default_currency_id,
       default_currency_use_symbol: _default_currency_use_symbol,
       default_email_address: _default_email_address,
-      default_language_id: _efault_language_id,
+      default_language_id: _default_language_id,
       encrypt_key: _encrypt_key,
       external_id: _external_id,
       login: _login,
@@ -123,7 +123,7 @@ export function editClient(
       default_currency_id: _default_currency_id,
       default_currency_use_symbol: _default_currency_use_symbol,
       default_email_address: _default_email_address,
-      default_language_id: _efault_language_id,
+      default_language_id: _default_language_id,
       encrypt_key: _encrypt_key,
       external_id: _external_id,
       login: _login,
@@ -156,19 +156,19 @@ export function deleteClient(_id) {
 
 export function watchFirebaseClientsRef() {
   return function(dispatch) {
-    clients.on("child_added", data => {
+    clients.on('child_added', data => {
       const newClient = Object.assign({}, data.val(), {
         id: data.getKey()
       });
       dispatch(receiveClient(newClient));
     });
-    clients.on("child_changed", data => {
+    clients.on('child_changed', data => {
       const updatedClient = Object.assign({}, data.val(), {
         id: data.getKey()
       });
       dispatch(receiveClient(updatedClient));
     });
-    clients.on("child_removed", data => {
+    clients.on('child_removed', data => {
       dispatch(receiveDeletedClient(data.getKey()));
     });
   };
@@ -244,19 +244,19 @@ export function deleteProduct(_id) {
 
 export function watchFirebaseProductsRef() {
   return function(dispatch) {
-    products.on("child_added", data => {
+    products.on('child_added', data => {
       const newProduct = Object.assign({}, data.val(), {
         id: data.getKey()
       });
       dispatch(receiveProduct(newProduct));
     });
-    products.on("child_changed", data => {
+    products.on('child_changed', data => {
       const updatedProduct = Object.assign({}, data.val(), {
         id: data.getKey()
       });
       dispatch(receiveProduct(updatedProduct));
     });
-    products.on("child_removed", data => {
+    products.on('child_removed', data => {
       dispatch(receiveDeletedProduct(data.getKey()));
     });
   };
@@ -320,19 +320,19 @@ export function deleteGroup(_id) {
 
 export function watchFirebaseGroupsRef() {
   return function(dispatch) {
-    groups.on("child_added", data => {
+    groups.on('child_added', data => {
       const newGroup = Object.assign({}, data.val(), {
         id: data.getKey()
       });
       dispatch(receiveGroup(newGroup));
     });
-    groups.on("child_changed", data => {
+    groups.on('child_changed', data => {
       const updatedGroup = Object.assign({}, data.val(), {
         id: data.getKey()
       });
       dispatch(receiveGroup(updatedGroup));
     });
-    groups.on("child_removed", data => {
+    groups.on('child_removed', data => {
       dispatch(receiveDeletedGroup(data.getKey()));
     });
   };
@@ -396,19 +396,19 @@ export function deleteClientCustomValue(_id) {
 
 export function watchFirebaseClientCustomValuesRef() {
   return function(dispatch) {
-    clientCustomValues.on("child_added", data => {
+    clientCustomValues.on('child_added', data => {
       const newClientCustomValue = Object.assign({}, data.val(), {
         id: data.getKey()
       });
       dispatch(receiveClientCustomValue(newClientCustomValue));
     });
-    clientCustomValues.on("child_changed", data => {
+    clientCustomValues.on('child_changed', data => {
       const updatedClientCustomValue = Object.assign({}, data.val(), {
         id: data.getKey()
       });
       dispatch(receiveClientCustomValue(updatedClientCustomValue));
     });
-    clientCustomValues.on("child_removed", data => {
+    clientCustomValues.on('child_removed', data => {
       dispatch(receiveDeletedClientCustomValue(data.getKey()));
     });
   };
@@ -460,19 +460,19 @@ export function deleteClientPermission(_id) {
 
 export function watchFirebaseClientPermissionsRef() {
   return function(dispatch) {
-    clientPermissions.on("child_added", data => {
+    clientPermissions.on('child_added', data => {
       const newClientPermission = Object.assign({}, data.val(), {
         id: data.getKey()
       });
       dispatch(receiveClientPermission(newClientPermission));
     });
-    clientPermissions.on("child_changed", data => {
+    clientPermissions.on('child_changed', data => {
       const updatedClientPermission = Object.assign({}, data.val(), {
         id: data.getKey()
       });
       dispatch(receiveClientPermission(updatedClientPermission));
     });
-    clientPermissions.on("child_removed", data => {
+    clientPermissions.on('child_removed', data => {
       dispatch(receiveDeletedClientPermission(data.getKey()));
     });
   };
@@ -492,10 +492,146 @@ function receiveDeletedClientPermission(clientPermissionId) {
   };
 }
 
+export function addCustomValue(
+  _id,
+  _char_value,
+  _custom_type_id,
+  _default_value,
+  _description,
+  _num_value
+) {
+  return () =>
+    customValues.push({
+      char_value: _char_value,
+      custom_type_id: _custom_type_id,
+      default_value: _default_value,
+      description: _description,
+      num_value: _num_value
+    });
+}
+
+export function editCustomValue(
+  _id,
+  _char_value,
+  _custom_type_id,
+  _default_value,
+  _description,
+  _num_value
+) {
+  /*eslint-disable */
+  var customValueToUpdate = firebase.database().ref("customValues/" + _id);
+  /*eslint-enable */
+  return () =>
+    customValueToUpdate.update({
+      char_value: _char_value,
+      custom_type_id: _custom_type_id,
+      default_value: _default_value,
+      description: _description,
+      num_value: _num_value
+    });
+}
+
+export function deleteCustomValue(_id) {
+  /*eslint-disable */
+  var customValueToDelete = firebase.database().ref("customValues/" + _id);
+  /*eslint-enable */
+  return () => customValueToDelete.remove();
+}
+
+export function watchFirebaseCustomValuesRef() {
+  return function(dispatch) {
+    customValues.on('child_added', data => {
+      const newCustomValue = Object.assign({}, data.val(), {
+        id: data.getKey()
+      });
+      dispatch(receiveCustomValue(newCustomValue));
+    });
+    customValues.on('child_changed', data => {
+      const updatedCustomValue = Object.assign({}, data.val(), {
+        id: data.getKey()
+      });
+      dispatch(receiveCustomValue(updatedCustomValue));
+    });
+    customValues.on('child_removed', data => {
+      dispatch(receiveDeletedCustomValue(data.getKey()));
+    });
+  };
+}
+
 function receiveCustomValue(customValueFromFirebase) {
   return {
     type: c.RECEIVE_CUSTOM_VALUE,
     customValue: customValueFromFirebase
+  };
+}
+
+function receiveDeletedCustomValue(customValueId) {
+  return {
+    type: c.RECEIVE_DELETED_CUSTOM_VALUE,
+    customValueId: customValueId
+  };
+}
+
+
+export function addCustomType(
+  _id,
+  _custom_input_type,
+  _custom_type_category_id,
+  _custom_type_description,
+  _custom_type_name
+) {
+  return () =>
+    customTypes.push({
+      custom_input_type: _custom_input_type,
+      custom_type_category_id: _custom_type_category_id,
+      custom_type_description: _custom_type_description,
+      custom_type_name: _custom_type_name
+    });
+}
+
+export function editCustomType(
+  _id,
+  _custom_input_type,
+  _custom_type_category_id,
+  _custom_type_description,
+  _custom_type_name
+) {
+  /*eslint-disable */
+  var customTypeToUpdate = firebase.database().ref("customTypes/" + _id);
+  /*eslint-enable */
+  return () =>
+    customTypeToUpdate.update({
+      custom_input_type: _custom_input_type,
+      custom_type_category_id: _custom_type_category_id,
+      custom_type_description: _custom_type_description,
+      custom_type_name: _custom_type_name
+    });
+}
+
+export function deleteCustomType(_id) {
+  /*eslint-disable */
+  var customTypeToDelete = firebase.database().ref("customTypes/" + _id);
+  /*eslint-enable */
+  return () => customTypeToDelete.remove();
+}
+
+export function watchFirebaseCustomTypesRef() {
+  return function(dispatch) {
+    customTypes.on('child_added', data => {
+      const newCustomType = Object.assign({}, data.val(), {
+        id: data.getKey()
+      });
+      dispatch(receiveCustomType(newCustomType));
+    });
+    customTypes.on('child_changed', data => {
+      const updatedCustomType = Object.assign({}, data.val(), {
+        id: data.getKey()
+      });
+      dispatch(receiveCustomType(updatedCustomType));
+    });
+    customTypes.on('child_removed', data => {
+      dispatch(receiveDeletedCustomType(data.getKey()));
+    });
   };
 }
 
@@ -506,6 +642,79 @@ function receiveCustomType(customTypeFromFirebase) {
   };
 }
 
+function receiveDeletedCustomType(customTypeId) {
+  return {
+    type: c.RECEIVE_DELETED_CUSTOM_TYPE,
+    customTypeId: customTypeId
+  };
+}
+
+export function addPermission(
+  _id,
+  _nme,
+  _permission_category_id,
+  _permission_description,
+  _type,
+  _userflg  
+) {
+  return () =>
+    permissions.push({
+      nme: _nme,
+      permission_category_id: _permission_category_id,
+      permission_description: _permission_description,
+      type: _type,
+      userflg: _userflg
+    });
+}
+
+export function editPermission(
+  _id,
+  _nme,
+  _permission_category_id,
+  _permission_description,
+  _type,
+  _userflg  
+) {
+  /*eslint-disable */
+  var permissionToUpdate = firebase.database().ref("permissions/" + _id);
+  /*eslint-enable */
+  return () =>
+    permissionToUpdate.update({
+      nme: _nme,
+      permission_category_id: _permission_category_id,
+      permission_description: _permission_description,
+      type: _type,
+      userflg: _userflg
+    });
+}
+
+export function deletePermission(_id) {
+  /*eslint-disable */
+  var permissionToDelete = firebase.database().ref("permissions/" + _id);
+  /*eslint-enable */
+  return () => permissionToDelete.remove();
+}
+
+export function watchFirebasePermissionsRef() {
+  return function(dispatch) {
+    permissions.on('child_added', data => {
+      const newPermission = Object.assign({}, data.val(), {
+        id: data.getKey()
+      });
+      dispatch(receivePermission(newPermission));
+    });
+    permissions.on('child_changed', data => {
+      const updatedPermission = Object.assign({}, data.val(), {
+        id: data.getKey()
+      });
+      dispatch(receivePermission(updatedPermission));
+    });
+    permissions.on('child_removed', data => {
+      dispatch(receiveDeletedPermission(data.getKey()));
+    });
+  };
+}
+
 function receivePermission(permissionFromFirebase) {
   return {
     type: c.RECEIVE_PERMISSION,
@@ -513,10 +722,79 @@ function receivePermission(permissionFromFirebase) {
   };
 }
 
+function receiveDeletedPermission(permissionId) {
+  return {
+    type: c.RECEIVE_DELETED_PERMISSION,
+    permissionId: permissionId
+  };
+}
+
+
+export function addPermissionCategory(
+  _id,
+  _display_order,
+  _permission_category_name
+) {
+  return () =>
+    permissionCategories.push({
+      display_order: _display_order,
+      permission_category_name: _permission_category_name
+    });
+}
+
+export function editPermissionCategory(
+  _id,
+  _display_order,
+  _permission_category_name
+) {
+  /*eslint-disable */
+  var permissionCategoryToUpdate = firebase.database().ref("permissionCategories/" + _id);
+  /*eslint-enable */
+  return () =>
+    permissionCategoryToUpdate.update({
+      display_order: _display_order,
+      permission_category_name: _permission_category_name
+    });
+}
+
+export function deletePermissionCategory(_id) {
+  /*eslint-disable */
+  var permissionCategoryToDelete = firebase.database().ref("permissionCategories/" + _id);
+  /*eslint-enable */
+  return () => permissionCategoryToDelete.remove();
+}
+
+export function watchFirebasePermissionCategoriesRef() {
+  return function(dispatch) {
+    permissionCategories.on('child_added', data => {
+      const newPermissionCategory = Object.assign({}, data.val(), {
+        id: data.getKey()
+      });
+      dispatch(receivePermissionCategory(newPermissionCategory));
+    });
+    permissionCategories.on('child_changed', data => {
+      const updatedPermissionCategory = Object.assign({}, data.val(), {
+        id: data.getKey()
+      });
+      dispatch(receivePermissionCategory(updatedPermissionCategory));
+    });
+    permissionCategories.on('child_removed', data => {
+      dispatch(receiveDeletedPermissionCategory(data.getKey()));
+    });
+  };
+}
+
 function receivePermissionCategory(permissionCategoryFromFirebase) {
   return {
     type: c.RECEIVE_PERMISSION_CATEGORY,
     permissionCategory: permissionCategoryFromFirebase
+  };
+}
+
+function receiveDeletedPermissionCategory(permissionCategoryId) {
+  return {
+    type: c.RECEIVE_DELETED_PERMISSION_CATEGORY,
+    permissionCategoryId: permissionCategoryId
   };
 }
 
@@ -528,7 +806,7 @@ export function addGroupCustomValue(
   _intersect_custom_value_id
 ) {
   return () =>
-    groupCustoms.push({
+    groupCustomValues.push({
       custom_type_id: _custom_type_id,
       custom_value_id: _custom_value_id,
       group_id: _group_id,
@@ -544,12 +822,12 @@ export function editGroupCustomValue(
   _intersect_custom_value_id
 ) {
   /*eslint-disable */
-  var groupCustomToUpdate = firebase
+  var groupCustomValueToUpdate = firebase
     .database()
-    .ref("groupCustomValuess/" + _id);
+    .ref("groupCustomValues/" + _id);
   /*eslint-enable */
   return () =>
-    groupCustomToUpdate.update({
+    groupCustomValueToUpdate.update({
       custom_type_id: _custom_type_id,
       custom_value_id: _custom_value_id,
       group_id: _group_id,
@@ -561,26 +839,26 @@ export function deleteGroupCustomValue(_id) {
   /*eslint-disable */
   var groupCustomValueToDelete = firebase
     .database()
-    .ref("groupCustomValuess/" + _id);
+    .ref("groupCustomValues/" + _id);
   /*eslint-enable */
   return () => groupCustomValueToDelete.remove();
 }
 
 export function watchFirebaseGroupCustomValuesRef() {
   return function(dispatch) {
-    groupCustomValues.on("child_added", data => {
+    groupCustomValues.on('child_added', data => {
       const newGroupCustomValue = Object.assign({}, data.val(), {
         id: data.getKey()
       });
       dispatch(receiveGroupCustomValue(newGroupCustomValue));
     });
-    groupCustomValues.on("child_changed", data => {
+    groupCustomValues.on('child_changed', data => {
       const updatedGroupCustomValue = Object.assign({}, data.val(), {
         id: data.getKey()
       });
       dispatch(receiveGroupCustomValue(updatedGroupCustomValue));
     });
-    groupCustomValues.on("child_removed", data => {
+    groupCustomValues.on('child_removed', data => {
       dispatch(receiveDeletedGroupCustomValue(data.getKey()));
     });
   };
@@ -589,7 +867,7 @@ export function watchFirebaseGroupCustomValuesRef() {
 function receiveGroupCustomValue(groupCustomValueFromFirebase) {
   return {
     type: c.RECEIVE_GROUP_CUSTOM_VALUE,
-    groupCustom: groupCustomValueFromFirebase
+    groupCustomValue: groupCustomValueFromFirebase
   };
 }
 
@@ -630,19 +908,19 @@ export function deleteGroupPermission(_id) {
 
 export function watchFirebaseGroupPermissionsRef() {
   return function(dispatch) {
-    groupPermissions.on("child_added", data => {
+    groupPermissions.on('child_added', data => {
       const newGroupPermission = Object.assign({}, data.val(), {
         id: data.getKey()
       });
       dispatch(receiveGroupPermission(newGroupPermission));
     });
-    groupPermissions.on("child_changed", data => {
+    groupPermissions.on('child_changed', data => {
       const updatedGroupPermission = Object.assign({}, data.val(), {
         id: data.getKey()
       });
       dispatch(receiveGroupPermission(updatedGroupPermission));
     });
-    groupPermissions.on("child_removed", data => {
+    groupPermissions.on('child_removed', data => {
       dispatch(receiveDeletedGroupPermission(data.getKey()));
     });
   };
@@ -651,7 +929,7 @@ export function watchFirebaseGroupPermissionsRef() {
 function receiveGroupPermission(groupPermissionFromFirebase) {
   return {
     type: c.RECEIVE_GROUP_PERMISSION,
-    groupCustom: groupPermissionFromFirebase
+    groupPermission: groupPermissionFromFirebase
   };
 }
 
@@ -659,6 +937,82 @@ function receiveDeletedGroupPermission(groupPermissionId) {
   return {
     type: c.RECEIVE_DELETED_GROUP_PERMISSION,
     groupPermissionId: groupPermissionId
+  };
+}
+
+export function addProductPermission(
+  _id,
+  _permission_id,
+  _product_id
+) {
+  return () =>
+    productPermissions.push({
+      permission_id: _permission_id,
+      product_id: _product_id
+    });
+}
+
+export function editProductPermission(
+  _id,
+  _permission_id,
+  _product_id
+) {
+  /*eslint-disable */
+  var productPermissionToUpdate = firebase
+    .database()
+    .ref("productPermissions/" + _id);
+  /*eslint-enable */
+  return () =>
+    productPermissionToUpdate.update({
+      permission_id: _permission_id,
+      product_id: _product_id
+    });
+}
+
+export function deleteProductPermission(_id) {
+  /*eslint-disable */
+  var productPermissionToDelete = firebase
+    .database()
+    .ref("productPermissions/" + _id);
+  /*eslint-enable */
+  return () => productPermissionToDelete.remove();
+}
+
+export function watchFirebaseProductPermissionsRef() {
+  return function(dispatch) {
+    productPermissions.on('child_added', data => {
+      const newProductPermission = Object.assign({}, data.val(), {
+        id: data.getKey()
+      });
+      dispatch(receiveProductPermission(newProductPermission));
+    });
+    productPermissions.on('child_changed', data => {
+      const updatedProductPermission = Object.assign({}, data.val(), {
+        id: data.getKey()
+      });
+      dispatch(
+        receiveProductPermission(updatedProductPermission)
+      );
+    });
+    productPermissions.on('child_removed', data => {
+      dispatch(receiveDeletedProductPermission(data.getKey()));
+    });
+  };
+}
+
+function receiveProductPermission(
+  productPermissionFromFirebase
+) {
+  return {
+    type: c.RECEIVE_PRODUCT_PERMISSION,
+    productPermission: productPermissionFromFirebase
+  };
+}
+
+function receiveDeletedProductPermission(productPermissionId) {
+  return {
+    type: c.RECEIVE_DELETED_PRODUCT_PERMISSION,
+    productPermissionId: productPermissionId
   };
 }
 
@@ -706,13 +1060,13 @@ export function deleteProductUserTypePermission(_id) {
 
 export function watchFirebaseProductUserTypePermissionsRef() {
   return function(dispatch) {
-    productUserTypePermissions.on("child_added", data => {
+    productUserTypePermissions.on('child_added', data => {
       const newProductUserTypePermission = Object.assign({}, data.val(), {
         id: data.getKey()
       });
       dispatch(receiveProductUserTypePermission(newProductUserTypePermission));
     });
-    productUserTypePermissions.on("child_changed", data => {
+    productUserTypePermissions.on('child_changed', data => {
       const updatedProductUserTypePermission = Object.assign({}, data.val(), {
         id: data.getKey()
       });
@@ -720,7 +1074,7 @@ export function watchFirebaseProductUserTypePermissionsRef() {
         receiveProductUserTypePermission(updatedProductUserTypePermission)
       );
     });
-    productUserTypePermissions.on("child_removed", data => {
+    productUserTypePermissions.on('child_removed', data => {
       dispatch(receiveDeletedProductUserTypePermission(data.getKey()));
     });
   };
@@ -786,19 +1140,19 @@ export function deleteProductCustomValue(_id) {
 
 export function watchFirebaseProductCustomValuesRef() {
   return function(dispatch) {
-    productCustomValues.on("child_added", data => {
+    productCustomValues.on('child_added', data => {
       const newProductCustomValue = Object.assign({}, data.val(), {
         id: data.getKey()
       });
       dispatch(receiveProductCustomValue(newProductCustomValue));
     });
-    productCustomValues.on("child_changed", data => {
+    productCustomValues.on('child_changed', data => {
       const updatedProductCustomValue = Object.assign({}, data.val(), {
         id: data.getKey()
       });
       dispatch(receiveProductCustomValue(updatedProductCustomValue));
     });
-    productCustomValues.on("child_removed", data => {
+    productCustomValues.on('child_removed', data => {
       dispatch(receiveDeletedProductCustomValue(data.getKey()));
     });
   };

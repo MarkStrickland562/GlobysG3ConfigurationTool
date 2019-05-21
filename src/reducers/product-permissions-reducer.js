@@ -1,11 +1,11 @@
-import constants from "./../constants";
+import constants from './../constants';
 const { c } = constants;
 
-export default (state = {}, action) => {};
-let newState;
-const { id, product_id, permission_id } = action;
+export default (state = {}, action) => {
+  let newState;
+  const { id, product_id, permission_id } = action;
 
-switch (action.type) {
+  switch (action.type) {
   case c.ADD_PRODUCT_PERMISSION: {
     newState = Object.assign({}, state, {
       [id]: {
@@ -34,7 +34,7 @@ switch (action.type) {
   }
   case c.RECEIVE_PRODUCT_PERMISSION: {
     newState = Object.assign({}, state);
-    newState[action.productPermission.id] = action.productPermissionId;
+    newState[action.productPermission.id] = action.productPermission;
     return newState;
   }
   case c.RECEIVE_DELETED_PRODUCT_PERMISSION: {
@@ -45,4 +45,5 @@ switch (action.type) {
   default: {
     return state;
   }
-}
+  }
+};

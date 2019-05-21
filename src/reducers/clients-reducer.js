@@ -1,39 +1,39 @@
-import constants from "./../constants";
+import constants from './../constants';
 const { c } = constants;
 
-export default (state = {}, action) => {};
-let newState;
-const {
-  id,
-  cat_acct_search_type,
-  client_ad_nme,
-  default_currency_id,
-  default_currency_use_symbol,
-  default_email_address,
-  default_language_id,
-  encrypt_key,
-  external_id,
-  login,
-  max_pwd_days,
-  min_pwd_days,
-  nme,
-  password,
-  preproc_min,
-  public_encryption_key,
-  public_encryption_type,
-  pwd_history_count,
-  sso_redirect_flg,
-  sso_redirect_querystring_flg,
-  timezone,
-  user_acct_flg,
-  validation_question_1,
-  validation_question_2,
-  validation_question_3,
-  validation_question_4,
-  validation_question_5
-} = action;
+export default (state = {}, action) => {
+  let newState;
+  const {
+    id,
+    cat_acct_search_type,
+    client_ad_nme,
+    default_currency_id,
+    default_currency_use_symbol,
+    default_email_address,
+    default_language_id,
+    encrypt_key,
+    external_id,
+    login,
+    max_pwd_days,
+    min_pwd_days,
+    nme,
+    password,
+    preproc_min,
+    public_encryption_key,
+    public_encryption_type,
+    pwd_history_count,
+    sso_redirect_flg,
+    sso_redirect_querystring_flg,
+    timezone,
+    user_acct_flg,
+    validation_question_1,
+    validation_question_2,
+    validation_question_3,
+    validation_question_4,
+    validation_question_5
+  } = action;
 
-switch (action.type) {
+  switch (action.type) {
   case c.ADD_CLIENT: {
     newState = Object.assign({}, state, {
       [id]: {
@@ -121,4 +121,5 @@ switch (action.type) {
   default: {
     return state;
   }
-}
+  }
+};

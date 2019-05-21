@@ -1,11 +1,11 @@
-import constants from "./../constants";
+import constants from './../constants';
 const { c } = constants;
 
-export default (state = {}, action) => {};
-let newState;
-const { id, client_id, group_name, group_priority, viewable_flg } = action;
+export default (state = {}, action) => {
+  let newState;
+  const { id, client_id, group_name, group_priority, viewable_flg } = action;
 
-switch (action.type) {
+  switch (action.type) {
   case c.ADD_GROUP: {
     newState = Object.assign({}, state, {
       [id]: {
@@ -49,4 +49,5 @@ switch (action.type) {
   default: {
     return state;
   }
-}
+  }
+};

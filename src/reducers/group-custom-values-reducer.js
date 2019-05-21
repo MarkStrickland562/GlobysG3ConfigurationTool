@@ -1,15 +1,18 @@
-export default (state = {}, action) => {};
-let newState;
-const {
-  id,
-  custom_type_id,
-  custom_value_id,
-  group_id,
-  intersect_custom_value_id
-} = action;
+import constants from './../constants';
+const { c } = constants;
 
-switch (action.type) {
-  case c.ADD_GROUP_CUSTOM_VALUES: {
+export default (state = {}, action) => {
+  let newState;
+  const {
+    id,
+    custom_type_id,
+    custom_value_id,
+    group_id,
+    intersect_custom_value_id
+  } = action;
+
+  switch (action.type) {
+  case c.ADD_GROUP_CUSTOM_VALUE: {
     newState = Object.assign({}, state, {
       [id]: {
         custom_type_id: custom_type_id,
@@ -20,7 +23,7 @@ switch (action.type) {
     });
     return newState;
   }
-  case c.EDIT_GROUP_CUSTOM_VALUES: {
+  case c.EDIT_GROUP_CUSTOM_VALUE: {
     const newGroupCustomValue = Object.assign(
       {},
       state[id],
@@ -34,17 +37,17 @@ switch (action.type) {
     });
     return newState;
   }
-  case c.DELETE_GROUP_CUSTOM_VALUES: {
+  case c.DELETE_GROUP_CUSTOM_VALUE: {
     newState = Object.assign({}, state);
     delete newState[action.groupCustomValue.id];
     return newState;
   }
-  case c.RECEIVE_GROUP_CUSTOM_VALUES: {
+  case c.RECEIVE_GROUP_CUSTOM_VALUE: {
     newState = Object.assign({}, state);
-    newState[action.groupCustomValue.id] = action.groupCustomValueId;
+    newState[action.groupCustomValue.id] = action.groupCustomValue;
     return newState;
   }
-  case c.RECEIVE_DELETED_GROUP_CUSTOM_VALUES: {
+  case c.RECEIVE_DELETED_GROUP_CUSTOM_VALUE: {
     newState = Object.assign({}, state);
     delete newState[action.groupCustomValueId];
     return newState;
@@ -52,4 +55,5 @@ switch (action.type) {
   default: {
     return state;
   }
-}
+  }
+};

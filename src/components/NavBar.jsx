@@ -63,11 +63,11 @@ function NavBar() {
                   <a class="dropdown-item" href="#">Something else here</a>
                 </div>
               </li> */}
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link className="nav-link disabled" href="#">
                   Reports
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </nav>

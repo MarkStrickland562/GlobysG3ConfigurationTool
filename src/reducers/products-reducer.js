@@ -1,20 +1,20 @@
-import constants from "./../constants";
+import constants from './../constants';
 const { c } = constants;
 
-export default (state = {}, action) => {};
-let newState;
-const {
-  id,
-  client_id,
-  display_help_text,
-  display_name,
-  display_order,
-  piv_flg,
-  product_code,
-  product_name
-} = action;
+export default (state = {}, action) => {
+  let newState;
+  const {
+    id,
+    client_id,
+    display_help_text,
+    display_name,
+    display_order,
+    piv_flg,
+    product_code,
+    product_name
+  } = action;
 
-switch (action.type) {
+  switch (action.type) {
   case c.ADD_PRODUCT: {
     newState = Object.assign({}, state, {
       [id]: {
@@ -64,4 +64,6 @@ switch (action.type) {
   default: {
     return state;
   }
-}
+  }
+};
+

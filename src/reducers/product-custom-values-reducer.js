@@ -1,12 +1,12 @@
-import constants from "./../constants";
+import constants from './../constants';
 const { c } = constants;
 
-export default (state = {}, action) => {};
-let newState;
-const { id, custom_type_id, custom_value_id, product_id } = action;
+export default (state = {}, action) => {
+  let newState;
+  const { id, custom_type_id, custom_value_id, product_id } = action;
 
-switch (action.type) {
-  case c.ADD_PRODUCT_CUSTOM_VALUES: {
+  switch (action.type) {
+  case c.ADD_PRODUCT_CUSTOM_VALUE: {
     newState = Object.assign({}, state, {
       [id]: {
         custom_type_id: custom_type_id,
@@ -16,7 +16,7 @@ switch (action.type) {
     });
     return newState;
   }
-  case c.EDIT_PRODUCT_CUSTOM_VALUES: {
+  case c.EDIT_PRODUCT_CUSTOM_VALUE: {
     const newProductCustomValue = Object.assign(
       {},
       state[id],
@@ -29,17 +29,17 @@ switch (action.type) {
     });
     return newState;
   }
-  case c.DELETE_PRODUCT_CUSTOM_VALUES: {
+  case c.DELETE_PRODUCT_CUSTOM_VALUE: {
     newState = Object.assign({}, state);
     delete newState[action.productCustomValue.id];
     return newState;
   }
-  case c.RECEIVE_PRODUCT_CUSTOM_VALUES: {
+  case c.RECEIVE_PRODUCT_CUSTOM_VALUE: {
     newState = Object.assign({}, state);
-    newState[action.productCustomValue.id] = action.productCustomValueId;
+    newState[action.productCustomValue.id] = action.productCustomValue;
     return newState;
   }
-  case c.RECEIVE_DELETED_PRODUCT_CUSTOM_VALUES: {
+  case c.RECEIVE_DELETED_PRODUCT_CUSTOM_VALUE: {
     newState = Object.assign({}, state);
     delete newState[action.productCustomValueId];
     return newState;
@@ -47,4 +47,6 @@ switch (action.type) {
   default: {
     return state;
   }
-}
+  }
+};
+
