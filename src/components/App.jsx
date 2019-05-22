@@ -92,7 +92,7 @@ class App extends React.Component {
             <Route exact path="/" component={Main} />
             <Route
               path="/clients"
-              render={() => <Clients clients={this.props.masterClients} />}
+              render={() => (<Clients clients={this.props.masterClients} />)}
             />
             <Route
               path="/addclient"
@@ -113,8 +113,8 @@ class App extends React.Component {
               )}
             />
             <Route
-              path="/groups"
-              render={() => <Groups groups={this.props.masterGroups} />}
+              path="/groups" 
+              render={() => (<Groups groups={this.props.masterGroups} />)}
             />
             <Route
               path="/addgroup"
@@ -136,7 +136,7 @@ class App extends React.Component {
             />
             <Route
               path="/products"
-              render={() => <Products products={this.props.masterProducts} />}
+              render={() => (<Products products={this.props.masterProducts} />)}
             />
             <Route
               path="/addproduct"
@@ -160,12 +160,12 @@ class App extends React.Component {
               path="/configurepermissions"
               render={() => (
                 <ConfigurePermissionsForm
-                  permissions={this.masterPermissions}
-                  permissionCategories={this.masterPermissionCategories}
-                  clientPermissions={this.clientPermissions}
-                  productPermissions={this.productPermissions}
-                  groupPermissions={this.groupPermissions}
-                  productUserTypePermissions={this.productUserTypePermissions}
+                  permissions={this.props.masterPermissions}
+                  permissionCategories={this.props.masterPermissionCategories}
+                  clientPermissions={this.props.masterClientPermissions}
+                  productPermissions={this.props.masterProductPermissions}
+                  groupPermissions={this.props.masterGroupPermissions}
+                  productUserTypePermissions={this.props.masterProductUserTypePermissions}
                   onFormSubmit={this.handleRouteBack} />
               )}
             />
@@ -173,11 +173,11 @@ class App extends React.Component {
               path="/configurecustomvalues"
               render={() => (
                 <ConfigureCustomValuesForm
-                  customValues={this.masterCustomValues}
-                  customTypes={this.masterCustomTypes}
-                  clientCustomValues={this.masterClientCustomValues}
-                  productCustomValues={this.masterProductCustomValues}
-                  groupCustomValues={this.masterGroupCustomValues}
+                  customValues={this.props.masterCustomValues}
+                  customTypes={this.props.masterCustomTypes}
+                  clientCustomValues={this.props.masterClientCustomValues}
+                  productCustomValues={this.props.masterProductCustomValues}
+                  groupCustomValues={this.props.masterGroupCustomValues}
                   onFormSubmit={this.handleRouteBack}
                 />
               )}

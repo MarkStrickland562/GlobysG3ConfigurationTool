@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 function TitleBar() {
   return (
@@ -20,11 +19,11 @@ function TitleBar() {
           } 
       `}
       </style>
-        <div className="titlebar">
-          <br></br>
-          <p>Globys G3 Configuration Tool</p>
-          <br></br>
-        </div>
+      <div className="titlebar">
+        <br></br>
+        <p>Globys G3 Configuration Tool</p>
+        <br></br>
+      </div>
     </div>
   );
 }

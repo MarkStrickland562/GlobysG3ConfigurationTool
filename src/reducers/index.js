@@ -18,23 +18,23 @@ import groupCustomValuesReducer from './group-custom-values-reducer';
 import { combineReducers } from 'redux';
 
 const rootReducer = combineReducers({
-  masterclients: clientsReducer,
+  masterClients: clientsReducer,
   selectedClient: selectedClientReducer,
-  masterproducts: productsReducer,
+  masterProducts: productsReducer,
   selectedProduct: selectedProductReducer,
-  mastergroups: groupsReducer,
+  masterGroups: groupsReducer,
   selectedGroup: selectedGroupReducer,
-  masterpermissions: permissionsReducer,
-  masterpermissioncategories: permissionCategoriesReducer,
-  masterclientpermissions: clientPermissionsReducer,
-  masterproductpermissions: productPermissionsReducer,
-  mastergrouppermissions: groupPermissionsReducer,
-  masterproductusertypepermissions: productUserTypePermissionsReducer,
-  mastercustomvalues: customValuesReducer,
-  mastercustomtypes: customTypesReducer,
-  masterclientcustomvalues: clientCustomValuesReducer,
-  masterproductcustomvalues: productCustomValuesReducer,
-  mastergroupcustomvalues: groupCustomValuesReducer
+  masterPermissions: permissionsReducer,
+  masterPermissionCategories: permissionCategoriesReducer,
+  masterClientPermissions: clientPermissionsReducer,
+  masterProductPermissions: productPermissionsReducer,
+  masterGroupPermissions: groupPermissionsReducer,
+  masterProductUserTypePermissions: productUserTypePermissionsReducer,
+  masterCustomValues: customValuesReducer,
+  masterCustomTypes: customTypesReducer,
+  masterClientCustomValues: clientCustomValuesReducer,
+  masterProductCustomValues: productCustomValuesReducer,
+  masterGroupCustomValues: groupCustomValuesReducer
 });
 
 export default rootReducer;

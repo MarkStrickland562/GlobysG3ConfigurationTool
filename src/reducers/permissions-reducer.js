@@ -9,7 +9,7 @@ export default (state = {}, action) => {
     permission_category_id,
     permission_description,
     type,
-    userflg
+    user_flg
   } = action;
 
   switch (action.type) {
@@ -20,7 +20,7 @@ export default (state = {}, action) => {
         permission_category_id: permission_category_id,
         permission_description: permission_description,
         type: type,
-        userflg: userflg
+        user_flg: user_flg
       }
     });
     return newState;
@@ -34,7 +34,7 @@ export default (state = {}, action) => {
       { permission_category_id },
       { permission_description },
       { type },
-      { userflg }
+      { user_flg }
     );
     newState = Object.assign({}, state, {
       [id]: newPermission
