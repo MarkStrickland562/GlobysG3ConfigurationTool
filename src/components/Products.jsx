@@ -6,14 +6,6 @@ import Product from './Product';
 import { connect } from 'react-redux';
 
 function Products(props) {
-  function handleSavingSelectedProduct(productId) {
-    const { dispatch } = props;
-    const action = {
-      type: 'SELECT_PRODUCT',
-      productId: productId
-    };
-    dispatch(action);
-  }
   return (
     <div>
       <style jsx>{`
@@ -35,7 +27,6 @@ function Products(props) {
 
         .pageText {
           text-align: left;
-          width: 90%;
           font-size: 14px;
           font-family: sans-serif;
           padding-left: 5%;
@@ -45,11 +36,23 @@ function Products(props) {
         .button-main {
           background-color: steelblue;
           border-radius: 5px;
+          display: inline-block;
+          font-size: 14px;
         }
 
         .link {
           color: white;
           text-decoration: none;
+        }
+
+        th {
+          width: 180px;
+          border: 2px solid steelblue;
+          padding: 2px;
+          margin: 0px 0px 0px 0px;
+          background-color: steelblue;
+          color: white;
+          font-size: 16px;
         }
       `}
       </style>
@@ -71,51 +74,39 @@ function Products(props) {
           <br></br>
         </div>
         <div className="pageText">
-          {Object.keys(props.products).map(function(productId) {
-            var product = props.products[productId];
-            return (
-              <div key={productId}>
-                <div>
-                  <Product
-                    client_id={product.client_id}
-                    display_help_text={product.display_help_text}
-                    display_name={product.display_name}
-                    display_order={product.display_order}
-                    piv_flg={product.piv_flg}
-                    product_code={product.product_code}
-                    product_name={product.product_name}
-                    productId={product.productId}
-                    key={productId}
-                  />
+          <table>
+            <tr>
+              <th style={{width: 80}}>Client ID</th>
+              <th style={{width: 240}}>Display Help Text</th>
+              <th>Display Name</th>
+              <th style={{width: 120}}>Display Order</th>
+              <th style={{width: 80}}>PIV Flag</th>
+              <th style={{width: 120}}>Product Code</th>
+              <th style={{width: 160}}>Product Name</th>
+            </tr>
+          </table>
+          <table>
+            {Object.keys(props.products).map(function(productId) {
+              var product = props.products[productId];
+              return (
+                <div key={productId}>
+                  <div>
+                    <Product
+                      client_id={product.client_id}
+                      display_help_text={product.display_help_text}
+                      display_name={product.display_name}
+                      display_order={product.display_order}
+                      piv_flg={product.piv_flg}
+                      product_code={product.product_code}
+                      product_name={product.product_name}
+                      productId={productId}
+                      key={productId}
+                    />
+                  </div>
                 </div>
-                <div>
-                  <button
-                    onClick={() => {
-                      handleSavingSelectedProduct(productId);
-                    }}
-                    type='button'
-                    className='button-main'
-                  >
-                    <Link className='link' to='/deleteproduct'>
-                      DELETE
-                    </Link>
-                  </button>
-                  <button
-                    onClick={() => {
-                      handleSavingSelectedProduct(productId);
-                    }}
-                    type='button'
-                    className='button-main'
-                  >
-                    <Link className='link' to='/editproduct'>
-                      UPDATE
-                    </Link>
-                  </button>
-                </div>
-              </div>
-            );
-          
-          })}
+              );
+            })}
+          </table>
         </div>
       </div>
     </div>

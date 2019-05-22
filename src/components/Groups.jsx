@@ -45,11 +45,23 @@ function Groups(props) {
         .button-main {
           background-color: steelblue;
           border-radius: 5px;
+          display: inline-block;
+          font-size: 14px;
         }
 
         .link {
           color: white;
           text-decoration: none;
+        }
+
+        th {
+          width: 180px;
+          border: 2px solid steelblue;
+          padding: 2px;
+          margin: 0px 0px 0px 0px;
+          background-color: steelblue;
+          color: white;
+          font-size: 16px;
         }
       `}
       </style>
@@ -71,48 +83,57 @@ function Groups(props) {
           <br></br>
         </div>
         <div className="pageText">
-          {Object.keys(props.groups).map(function(groupId) {
-            var group = props.groups[groupId];
-            return (
-              <div key={groupId}>
-                <div>
-                  <Group
-                    client_id={group.client_id}
-                    group_name={group.group_name}
-                    group_priority={group.group_priority}
-                    viewable_flg={group.viewable_flg}
-                    groupId={group.groupId}
-                    key={groupId}
-                  />
+          <table>
+            <tr>
+              <th style={{width: 80}}>Client ID</th>
+              <th style={{width: 240}}>Group Name</th>
+              <th style={{width: 80}}>Group Priority</th>
+              <th style={{width: 120}}>Viewable Flag</th>
+            </tr>
+          </table>
+          <table>
+            {Object.keys(props.groups).map(function(groupId) {
+              var group = props.groups[groupId];
+              return (
+                <div key={groupId}>
+                  <div>
+                    <Group
+                      client_id={group.client_id}
+                      group_name={group.group_name}
+                      group_priority={group.group_priority}
+                      viewable_flg={group.viewable_flg}
+                      groupId={group.groupId}
+                      key={groupId}
+                    />
+                  </div>
+                  <div>
+                    <button
+                      onClick={() => {
+                        handleSavingSelectedGroup(groupId);
+                      }}
+                      type='button'
+                      className='button-main'
+                    >
+                      <Link className='link' to='/deletegroup'>
+                        DELETE
+                      </Link>
+                    </button>
+                    <button
+                      onClick={() => {
+                        handleSavingSelectedGroup(groupId);
+                      }}
+                      type='button'
+                      className='button-main'
+                    >
+                      <Link className='link' to='/editgroup'>
+                        UPDATE
+                      </Link>
+                    </button>
+                  </div>
                 </div>
-                <div>
-                  <button
-                    onClick={() => {
-                      handleSavingSelectedGroup(groupId);
-                    }}
-                    type='button'
-                    className='button-main'
-                  >
-                    <Link className='link' to='/deletegroup'>
-                      DELETE
-                    </Link>
-                  </button>
-                  <button
-                    onClick={() => {
-                      handleSavingSelectedGroup(groupId);
-                    }}
-                    type='button'
-                    className='button-main'
-                  >
-                    <Link className='link' to='/editgroup'>
-                      UPDATE
-                    </Link>
-                  </button>
-                </div>
-              </div>
-            );
-          
-          })}
+              );
+            })}
+          </table>
         </div>
       </div>
     </div>

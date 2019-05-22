@@ -50,6 +50,7 @@ function Clients(props) {
         .link {
           color: white;
           text-decoration: none;
+          font-size: 18px;
         }
       `}
       </style>

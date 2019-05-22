@@ -1,16 +1,75 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 function Product(props){
+  function handleSavingSelectedProduct(productId) {
+    const { dispatch } = props;
+    const action = {
+      type: 'SELECT_PRODUCT',
+      productId: productId
+    };
+    dispatch(action);
+  }
   return (
-    <p>Client ID: {props.client_id}<br></br>
-       Display Help Text: {props.display_help_text }<br></br>
-       Display Name: {props.display_name}<br></br>
-       Display Order: {props.display_order}<br></br>
-       PIV Flag: {props.piv_flg}<br></br>
-       Product Code: {props.product_code}<br></br>
-       Product Name: {props.product_name}
-    </p>   
+    <div>
+      <style jsx>{`
+      .button-main {
+          background-color: steelblue;
+          border-radius: 5px;
+          display: inline-block;
+          font-size: 14px;
+        }
+
+        .link {
+          color: white;
+          text-decoration: none;
+        }
+
+        td {
+          width: 180px;
+          border: 2px solid steelblue;
+          font-size: 14px;
+        }
+      `}
+      </style>
+      <div>
+        <tr>
+          <td style={{width: 82}}>{props.client_id}</td>
+          <td style={{width: 261}}>{props.display_help_text}</td>
+          <td style={{width: 182}}>{props.display_name}</td>
+          <td style={{width: 122}}>{props.display_order}</td>
+          <td style={{width: 82}}>{props.piv_flg}</td>
+          <td style={{width: 122}}>{props.product_code}</td>
+          <td style={{width: 160}}>{props.product_name}</td>
+          <td style={{border: '0px'}}>
+            <button
+              onClick={() => {
+                handleSavingSelectedProduct(props.productId);
+              }}
+              type='button'
+              className='button-main'
+            >
+              <Link className='link' to='/deleteproduct'>
+                DELETE
+              </Link>
+            </button>
+            <button
+              onClick={() => {
+                handleSavingSelectedProduct(props.productId);
+              }}
+              type='button'
+              className='button-main'
+            >
+              <Link className='link' to='/editproduct'>
+                UPDATE
+              </Link>
+            </button>
+          </td>
+        </tr>
+      </div>   
+    </div>
   );
 }
 
@@ -21,7 +80,9 @@ Product.propTypes = {
   display_order: PropTypes.string.isRequired,
   piv_flg: PropTypes.string.isRequired,
   product_code: PropTypes.string.isRequired,
-  product_name: PropTypes.string.isRequired
+  product_name: PropTypes.string.isRequired,
+  productId: PropTypes.string.isRequired,
+  dispatch: PropTypes.func
 };
 
-export default Product;
+export default connect()(Product);

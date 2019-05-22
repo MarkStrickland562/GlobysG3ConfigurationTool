@@ -15,7 +15,7 @@ function NavBar() {
             border-radius: 5px;
           }
           .navtab p {
-            font-size: 18px;
+            font-size: 24px;
             font-family: sans-serif;
             color: white;
             padding: 2px 2px 2px 2px;
