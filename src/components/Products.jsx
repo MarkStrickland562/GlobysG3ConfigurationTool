@@ -8,81 +8,82 @@ import { connect } from 'react-redux';
 function Products(props) {
   return (
     <div>
-      <style jsx>{`
-        .container {
-          text-align: center;
-          margin: 2% 2% 2% 2%;
-        }
+      <style jsx>
+        {`
+          .container {
+            text-align: center;
+            margin: 2% 2% 2% 2%;
+          }
 
-        .pageTitle {
-          font-size: 30px;
-          margin-top: 5%;
-          text-align: center;
-          font-family: sans-serif;
-          font-size: 36px;
-          color: steelblue;
-          font-weight: bold;
-          text-shadow: 1px 1px 2px darkblue;
-        }
+          .pageTitle {
+            font-size: 30px;
+            margin-top: 5%;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 36px;
+            color: steelblue;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px darkblue;
+          }
 
-        .pageText {
-          text-align: left;
-          font-size: 14px;
-          font-family: sans-serif;
-          padding-left: 5%;
-          padding-right: 5%;
-        }
+          .pageText {
+            text-align: left;
+            font-size: 14px;
+            font-family: sans-serif;
+            padding-left: 5%;
+            padding-right: 5%;
+          }
 
-        .button-main {
-          background-color: steelblue;
-          border-radius: 5px;
-          display: inline-block;
-          font-size: 14px;
-        }
+          .button-main {
+            background-color: steelblue;
+            border-radius: 5px;
+            display: inline-block;
+            font-size: 14px;
+          }
 
-        .link {
-          color: white;
-          text-decoration: none;
-        }
+          .link {
+            color: white;
+            text-decoration: none;
+          }
 
-        th {
-          width: 180px;
-          border: 2px solid steelblue;
-          padding: 2px;
-          margin: 0px 0px 0px 0px;
-          background-color: steelblue;
-          color: white;
-          font-size: 16px;
-        }
-      `}
+          th {
+            width: 180px;
+            border: 2px solid steelblue;
+            padding: 2px;
+            margin: 0px 0px 0px 0px;
+            background-color: steelblue;
+            color: white;
+            font-size: 16px;
+          }
+        `}
       </style>
       <div className="container">
         <NavBar />
         <h1 className="pageTitle">PRODUCTS</h1>
         <div className="pageText">
-          <button type='button' className='button-main'>
-            <Link className='link' to='/addproduct'>
+          <button type="button" className="button-main">
+            <Link className="link" to="/addproduct">
               ADD PRODUCT
             </Link>
           </button>
-          <button type='button' className='button-main'>
-            <Link className='link' to='/searchproducts'>
+          <button type="button" className="button-main">
+            <Link className="link" to="/searchproducts">
               SEARCH PRODUCTS
             </Link>
           </button>
-          <br></br>
-          <br></br>
+          <br />
+          <br />
         </div>
         <div className="pageText">
           <table>
             <tr>
-              <th style={{width: 80}}>Client ID</th>
-              <th style={{width: 240}}>Display Help Text</th>
-              <th>Display Name</th>
-              <th style={{width: 120}}>Display Order</th>
-              <th style={{width: 80}}>PIV Flag</th>
-              <th style={{width: 120}}>Product Code</th>
-              <th style={{width: 160}}>Product Name</th>
+              <th style={{ width: 66 }}>Client ID</th>
+              <th style={{ width: 200 }}>Display Help Text</th>
+              <th style={{ width: 144 }}>Display Name</th>
+              <th style={{ width: 93 }}>Display Order</th>
+              <th style={{ width: 64 }}>PIV Flag</th>
+              <th style={{ width: 96 }}>Product Code</th>
+              <th style={{ width: 130 }}>Product Name</th>
             </tr>
           </table>
           <table>

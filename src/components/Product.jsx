@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-function Product(props){
+function Product(props) {
   function handleSavingSelectedProduct(productId) {
     const { dispatch } = props;
     const action = {
@@ -14,44 +14,45 @@ function Product(props){
   }
   return (
     <div>
-      <style jsx>{`
-      .button-main {
-          background-color: steelblue;
-          border-radius: 5px;
-          display: inline-block;
-          font-size: 14px;
-        }
+      <style jsx>
+        {`
+          .button-main {
+            background-color: steelblue;
+            border-radius: 5px;
+            display: inline-block;
+            font-size: 14px;
+          }
 
-        .link {
-          color: white;
-          text-decoration: none;
-        }
+          .link {
+            color: white;
+            text-decoration: none;
+          }
 
-        td {
-          width: 180px;
-          border: 2px solid steelblue;
-          font-size: 14px;
-        }
-      `}
+          td {
+            width: 180px;
+            border: 2px solid steelblue;
+            font-size: 12px;
+          }
+        `}
       </style>
       <div>
         <tr>
-          <td style={{width: 82}}>{props.client_id}</td>
-          <td style={{width: 261}}>{props.display_help_text}</td>
-          <td style={{width: 182}}>{props.display_name}</td>
-          <td style={{width: 122}}>{props.display_order}</td>
-          <td style={{width: 82}}>{props.piv_flg}</td>
-          <td style={{width: 122}}>{props.product_code}</td>
-          <td style={{width: 160}}>{props.product_name}</td>
-          <td style={{border: '0px'}}>
+          <td style={{ width: 82 }}>{props.client_id}</td>
+          <td style={{ width: 264 }}>{props.display_help_text}</td>
+          <td style={{ width: 182 }}>{props.display_name}</td>
+          <td style={{ width: 122 }}>{props.display_order}</td>
+          <td style={{ width: 82 }}>{props.piv_flg}</td>
+          <td style={{ width: 122 }}>{props.product_code}</td>
+          <td style={{ width: 160 }}>{props.product_name}</td>
+          <td style={{ border: '0px' }}>
             <button
               onClick={() => {
                 handleSavingSelectedProduct(props.productId);
               }}
-              type='button'
-              className='button-main'
+              type="button"
+              className="button-main"
             >
-              <Link className='link' to='/deleteproduct'>
+              <Link className="link" to="/deleteproduct">
                 DELETE
               </Link>
             </button>
@@ -59,16 +60,16 @@ function Product(props){
               onClick={() => {
                 handleSavingSelectedProduct(props.productId);
               }}
-              type='button'
-              className='button-main'
+              type="button"
+              className="button-main"
             >
-              <Link className='link' to='/editproduct'>
+              <Link className="link" to="/editproduct">
                 UPDATE
               </Link>
             </button>
           </td>
         </tr>
-      </div>   
+      </div>
     </div>
   );
 }
